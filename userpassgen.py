@@ -11,4 +11,3 @@ for i in range(100):
 
 with open("login.json", "w") as f:
     json.dump(credentials, f)
-    
