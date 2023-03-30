@@ -22,8 +22,14 @@ int main(){
         case 1: 
         cout<<"Enter the value of the key name"<<endl;
         cin>>tempString;
-        cout<<"The value of the key is"<<myMap[tempString]<<endl;
+        //cout<<"The value of the key is"<<myMap[tempString]<<endl;
         break;
+        if(myMap[tempString]!=NULL){
+            cout<<"The value of the key is"<<myMap[tempString]<<endl;
+        }
+        else{
+            cout<<"The key value associated with the key name is not found"<<endl;
+        }
 
         case 2:
         cout<<"Enter the value of the key"<<endl;
