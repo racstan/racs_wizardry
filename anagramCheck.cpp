@@ -17,13 +17,12 @@ int main(){
      memset(frequency,0,sizeof(frequency));
      memset(frequencyNew,0,sizeof(frequencyNew));
 
-     for(char c: orig){ // for char c belonging to orig
+     for(char c: orig){ 
         if(isalpha(c)){
             ++frequency[tolower(c)-'a'];
         }
      }
      for(auto i = 0; i<26; i++){
-        //cout<<char(i+'a')<<" : "<<frequency[i]<<endl;
         countFreq+= frequency[i];
      }
     
