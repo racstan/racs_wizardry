@@ -1,0 +1,58 @@
+﻿enforce_JusPrimaeNoctis_decision = {
+	ai_check_interval = 0
+
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	desc = "Enforce Jus Primae Noctis"
+	major = yes
+
+	is_shown = {
+		ai = no
+		NOT = {has_character_flag = jus_primae_noctis_flag}
+	}
+	
+	is_valid = {
+		is_independent_ruler = yes
+	}
+
+	effect = {
+		add_character_flag = jus_primae_noctis_flag
+		add_character_flag = has_had_jus
+		trigger_event = first_night_law.0010
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+abrogate_JusPrimaeNoctis_decision = {
+	ai_check_interval = 0
+
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	desc = "Abrogate Jus Prima Noctis"
+
+	is_shown = {
+		ai = no
+		has_character_flag = jus_primae_noctis_flag
+	}
+
+	effect = {
+		remove_character_flag = jus_primae_noctis_flag
+		remove_character_flag = jpc_all
+		remove_character_flag = jpc_all_vassals
+		remove_character_flag = jpc_direct_vassals
+		remove_character_flag = jpc_court
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}

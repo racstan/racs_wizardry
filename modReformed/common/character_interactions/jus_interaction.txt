@@ -1,0 +1,40 @@
+﻿jus_reveal_interaction = {
+    category = interaction_category_diplomacy
+    
+    desc = jus_reveal_interaction_desc
+    common_interaction = yes
+    use_diplomatic_range = no
+
+    is_shown = {
+        NOR = {
+            scope:actor = scope:recipient
+        }
+        scope:actor = {
+			has_character_flag = has_had_jus
+		}
+        scope:recipient = {
+            has_character_flag = child_of_jus
+			scope:recipient.real_father = scope:actor
+			NOT = {scope:recipient.father = scope:recipient.real_father}
+        }
+    }
+    on_accept = {
+		#gives house head opinon
+		scope:actor.house.house_head = {
+			add_hook = {
+				target = scope:recipient
+				type = house_head_hook
+			}
+		}
+        	scope:recipient = {
+			#add good opinion to real father
+			add_opinion = {
+				target = scope:actor
+				modifier = legitimized_me_opinion
+			}
+			trigger_event = first_night_law.006
+        	}
+
+    }
+    auto_accept = yes
+}

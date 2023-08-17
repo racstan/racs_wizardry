@@ -1,0 +1,66 @@
+action_jus_can_reveal = {
+	combine_into_one = yes
+	priority = 400
+	check_create_action = {
+		#every courtier in own court
+		every_courtier = {
+			if = {
+				limit = {
+					NOT = {father = root}
+					real_father = root
+					has_character_flag = child_of_jus
+				}
+				try_create_important_action = {
+					important_action_type = action_jus_can_reveal
+					actor = root
+					recipient = this
+				}
+			}
+		}
+		
+		every_vassal_or_below = {
+			#the vassals themselves
+			if = {
+				limit = {
+					NOT = {father = root}
+					real_father = root
+					has_character_flag = child_of_jus
+				}
+				try_create_important_action = {
+					important_action_type = action_jus_can_reveal
+					actor = root
+					recipient = this
+				}
+			}
+			#Courtiers of the vassals
+			every_courtier = {
+				if = {
+					limit = {
+						NOT = {father = root}
+						real_father = root
+						has_character_flag = child_of_jus
+					}
+					try_create_important_action = {
+						important_action_type = action_jus_can_reveal
+						actor = root
+						recipient = this
+					}
+				}
+			}
+		}
+	}
+
+	unimportant = {
+		scope:recipient = {
+			is_alive = no
+		}
+	}
+
+	effect = {
+		open_interaction_window = {
+			interaction = jus_reveal_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}

@@ -1,0 +1,257 @@
+pregnancy_spouse_suspicion_chance_effect = {
+	hidden_effect = { #Scopes mother and real_father exist
+		save_scope_as = spouse
+		random_list = {
+			0 = { #Father is suspicious
+				trigger = {
+					NOT = { 
+						faith = { has_doctrine_parameter = no_unfaithfulness_penalty_active }
+						scope:mother = {has_character_flag = jus_pregnancy}
+					}
+				}
+
+				#Base chance
+				modifier = {
+					add = husband_suspicion_base_value
+					always = yes
+				}
+				#Increased chance of suspicion if it actually is a bastard
+				modifier = {
+					add = 50
+					NOT = {
+						scope:real_father = scope:spouse
+					}
+				}
+				#Increase significantly if the mother has a known lover
+				modifier = {
+					add = 150
+					scope:mother = {
+						OR = {
+							any_secret = { # Trigger for secret relations
+								secret_type = secret_lover
+								is_known_by = scope:spouse
+								trigger_if = {
+									limit = {
+										exists = secret_target
+									}
+									NOT = { secret_target = scope:spouse }
+								}
+							}
+							any_relation = { # Trigger for public relations
+								type = lover
+								NOT = { this = scope:spouse} # No suspicion chance if their lover is us!
+								NOT = { has_secret_relation_lover = scope:mother } # Not a secret relation (That's checked in the above step).
+							}
+						}
+					}
+				}
+				#Increased chance of suspicion if the child is a bastard and the mother is not very smart
+				modifier = {
+					add = 10
+					NOT = { scope:real_father = scope:spouse }
+					scope:mother = {
+						has_trait_rank = {
+							trait = intellect_bad
+							rank > 0
+						}
+					}
+				}
+				modifier = {
+					add = 15
+					NOT = { scope:real_father = scope:spouse }
+					scope:mother = {
+						has_trait_rank = {
+							trait = intellect_bad
+							rank > 1
+						}
+					}
+				}
+				modifier = {
+					add = 20
+					NOT = { scope:real_father = scope:spouse }
+					scope:mother = {
+						has_trait_rank = {
+							trait = intellect_bad
+							rank > 2
+						}
+					}
+				}
+				#Negative modifier if the mother is smart
+				modifier = {
+					add = -5
+					scope:mother = {
+						has_trait_rank = {
+							trait = intellect_good
+							rank > 0
+						}
+					}
+				}
+				modifier = {
+					add = -10
+					scope:mother = {
+						has_trait_rank = {
+							trait = intellect_good
+							rank > 1
+						}
+					}
+
+				}
+				modifier = {
+					add = -15
+					scope:mother = {
+						has_trait_rank = {
+							trait = intellect_good
+							rank > 2
+						}
+					}
+				}
+				#Bonuses for high intelligence if it is a bastard
+				modifier = {
+					add = 30
+					NOT = { scope:real_father = scope:spouse }
+					has_trait_rank = {
+						trait = intellect_good
+						rank > 0
+					}
+				}
+				modifier = {
+					add = 30
+					NOT = { scope:real_father = scope:spouse }
+					has_trait_rank = {
+						trait = intellect_good
+						rank > 1
+					}
+				}
+				modifier = {
+					add = 30
+					NOT = { scope:real_father = scope:spouse }
+					has_trait_rank = {
+						trait = intellect_good
+						rank > 2
+					}
+				}
+				#Negative modifiers for high intelligence if it is NOT a bastard
+				modifier = {
+					add = -30
+					scope:real_father = scope:spouse
+					has_trait_rank = {
+						trait = intellect_good
+						rank > 0
+					}
+				}
+				modifier = {
+					add = -30
+					scope:real_father = scope:spouse
+					has_trait_rank = {
+						trait = intellect_good
+						rank > 1
+					}
+				}
+				modifier = {
+					add = -30
+					scope:real_father = scope:spouse
+					has_trait_rank = {
+						trait = intellect_good
+						rank > 2
+					}
+				}
+				#Increased chance if father is paranoid
+				modifier = {
+					add = 50
+					has_trait = paranoid
+				}
+				#Very high chance if father is Celibate and not stupid
+				modifier = {
+					add = 1500
+					has_trait = celibate
+					NOT = {
+						has_trait_rank = {
+							trait = intellect_bad
+							rank > 2
+						}
+					}
+				}
+
+				trigger_event = adultery.1001
+			}
+			100 = { #No suspicion. Regular notification message is good enough for this if it's not the first child
+				trigger = {
+					NOT = { faith = { has_doctrine_parameter = no_unfaithfulness_penalty_active }}
+				}
+
+				#Base chance
+				modifier = {
+					add = {
+						value = 0
+							subtract = husband_suspicion_base_value
+					}
+					always = yes
+				}
+
+				if = {
+					limit = {
+						OR = {
+							any_child = { count < 1 }
+							AND = {
+								NOT = { any_child = { dynasty = scope:spouse.dynasty } }
+								scope:spouse = { matrilinear_marriage = no }
+							}
+						}
+					}
+					trigger_event = pregnancy.1002
+				}
+				else = {
+					send_interface_toast = {
+						left_icon = scope:mother
+						title = pregnancy_not_first_child_message
+						show_as_tooltip = {
+							scope:mother = {
+								add_trait_force_tooltip = pregnant
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#Selects the correct bastard pregnancy announcement to fire
+bastardy_pregnancy_announcement_effect = {
+	custom_tooltip = bastardy_pregnancy_announcement_tooltip
+	if = {
+		limit = {
+			this = scope:mother
+			NOT = {
+				scope:mother = {has_character_flag = jus_pregnancy}
+			}
+		}
+		bastard_pregnancy_mother_announcement_effect = yes
+	}
+	else_if = {
+		limit = {
+			exists = scope:mother.pregnancy_assumed_father
+			NOT = {
+				scope:mother = {has_character_flag = jus_pregnancy}
+			}
+		}
+		bastard_pregnancy_married_mother_announcement_effect = yes
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				scope:mother = {has_character_flag = jus_pregnancy}
+			}
+		}
+		bastard_pregnancy_unmarried_mother_announcement_effect = yes
+	}
+	if = {
+		limit = {
+			is_ai = no
+		}
+		add_character_flag = {
+			flag = tutorial_reactive_advice_bastards
+		}
+	}
+}
+

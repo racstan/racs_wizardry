@@ -1,0 +1,63 @@
+﻿l_english:
+  
+  #decisions
+  enforce_JusPrimaeNoctis_decision: "Enforce Jus Primae Noctis"
+  enforce_JusPrimaeNoctis_decision_tooltip: "Enforce the Law."
+  enforce_JusPrimaeNoctis_decision_confirm: "Tis My Right"
+  
+  abrogate_JusPrimaeNoctis_decision: "Abrogate Jus Primae Noctis"
+  abrogate_JusPrimaeNoctis_decision_tooltip: "Relax the Law."
+  abrogate_JusPrimaeNoctis_decision_confirm: "Abrogate"
+  
+  #interactions
+  jus_reveal_interaction: "Reveal Heritage"
+  jus_reveal_interaction_desc: "This person is most certainly the result of your right to their mother's first night. It is time to make it official."
+  
+  #important_actions
+  action_jus_can_reveal:0 "Reveal Child of First Night."
+  action_jus_can_reveal_label:0 "Reveal Child of First Night"
+  action_jus_can_reveal_desc:0 "This person is a result of your due diligence in upholding the law."
+  action_jus_can_reveal_unimportant:0 "Although they are being raised by your subjects, it is time to reveal the truth."
+  action_jus_can_reveal_click:0 "Welcome them to the family."
+  action_jus_can_reveal_combined_label:0 "[recipient.GetShortUIName]"
+  action_jus_can_reveal_combined_group_description:0 "Reveal the true heritage of the childen born from  your right to their mother's first night."
+  action_jus_can_reveal_combined_group_name:0 "Reveal Children of First Night"
+  action_jus_can_reveal_combined_group_label:0 "Reveal Children of First Night"
+  
+  #law setting
+  first_night_law.1.t:0 "Specifics of the Law"
+  first_night_law.1.desc:0 "I have decided to enforce my right. Taking the situation of my realm into account, I must decide on exactly how to enforce it."
+  first_night_law.1.a:0 "All of my realm will be subject to the law."
+  first_night_law.1.a.tt:0 "Every single marriage under your realm will be counted. #S NOT RECOMMENDED #"
+  first_night_law.1.b:0 "All vassals under me and my courtiers will heed the law."
+  first_night_law.1.b.tt:0 "Marriage of direct vassals, indirect vassals, your courtiers, and your extended family will be counted."
+  first_night_law.1.c:0 "Direct vassals and my courtiers are whom I have this right over."
+  first_night_law.1.c.tt:0 "Marriage of direct vassals, your courtiers, and your extended family will be counted. #S RECOMMENDED #"
+  first_night_law.1.d:0 "Only my court and offsprings."
+  first_night_law.1.d.tt:0 "Marriage of your courtiers and your extended family will be counted. #S RECOMMENDED #"
+  
+  #Basterdy Event
+  first_night_law.005.t:0 "My Child From Jus Primae Noctis"
+  first_night_law.005.desc:0 "Though many already knew [child_jus_var.GetShortUIName] to be of my blood, it had only the status of a rumour. \nNow that I have set the record straight, [child_jus_var.GetShortUIName] is officially part of the family."
+  first_night_law.005.a:0 "Welcome to the Family!"
+  first_night_law.005.a.tt:0 "[child_jus_var.GetShortUIName] will be revealed to be your child."
+  
+  #modifiers
+  jus_noctis_husband:0 "Took First Night"
+  jus_noctis_husband_spared:0 "Spared Wife"
+  jus_noctis_wife_spared_good:0 "Spared Me"
+  jus_noctis_wife_spared_bad:0 "Denied Me"
+  jus_wife_like:0 "Great First Night"
+  jus_wife_hate:0 "Disgraced First Night"
+  cuckolded_jus:0 "Cucked Me"
+  
+  #events
+  first_night_law.002.a:0 "I shall dutifully take my right on [bride.GetFirstName]."
+  first_night_law.002.b:0 "The time is not appropriate for this."
+  first_night_law.002.c:0 "Let us get over with this quickly..."
+  first_night_law.002.t:0 "Jus Primae Noctis"
+  first_night_law.002.desc:0 "My subject [bride.GetFirstNamePossessive] marriage has just been fulfilled. \nI must decide on my course of action in regards to upholding my right to [bride.GetFirstNamePossessive] first night."
+  
+  #misc.
+  jus_lay_with_bride.tt:0 "You lay with [bride.GetShortUIName]."
+  jus_start_scene.tt:0 "[bride.GetShortUIName] comes to your bedroom..."

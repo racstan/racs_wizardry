@@ -1,0 +1,50 @@
+﻿on_marriage = {
+	on_actions = {
+		on_jus_primae_noctis_from_female
+		on_jus_primae_noctis_from_male
+	}
+}
+
+on_birth_child = {
+	on_actions = {
+		on_jus_child_actions
+	}
+}
+
+
+on_jus_primae_noctis_from_female = {
+	trigger = {
+		is_female = yes
+		age <= 45
+	}
+	events = {
+		delay = { days = 1 }
+		first_night_law.001
+	}
+}
+on_jus_primae_noctis_from_male = {
+	trigger = {
+		is_female = no
+		scope:spouse = {age <= 45}
+	}
+	effect = {
+		scope:spouse = {
+			trigger_event = {
+				id = first_night_law.001
+				days = 1
+			}
+		}
+	}
+}
+
+on_jus_child_actions = {
+	trigger = {
+	 root.real_father = {has_character_flag = has_had_jus}
+	 root.mother = {has_character_flag = jus_pregnancy}
+	}
+	
+	events = {
+		delay = { days = 1 }
+		first_night_law.004
+	}
+}

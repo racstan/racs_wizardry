@@ -1,0 +1,488 @@
+namespace = first_night_law
+
+first_night_law.0010 = {
+	type = character_event
+	title = first_night_law.1.t
+	desc = first_night_law.1.desc
+	theme = crown
+	
+	left_portrait = {
+		character = ROOT
+		animation = personality_callous
+	}
+	
+	option = {
+		name =  first_night_law.1.a
+		custom_tooltip = first_night_law.1.a.tt
+		add_character_flag = jpc_all
+		remove_character_flag = jpc_direct_vassals
+		remove_character_flag = jpc_all_vassals
+		remove_character_flag = jpc_court
+	}
+	option = {
+		name =  first_night_law.1.b
+		custom_tooltip = first_night_law.1.b.tt
+		add_character_flag = jpc_all_vassals
+		remove_character_flag = jpc_all
+		remove_character_flag = jpc_direct_vassals
+		remove_character_flag = jpc_court
+	}
+	option = {
+		name =  first_night_law.1.c
+		custom_tooltip = first_night_law.1.c.tt
+		add_character_flag = jpc_direct_vassals
+		remove_character_flag = jpc_all
+		remove_character_flag = jpc_all_vassals
+		remove_character_flag = jpc_court
+	}
+	option = {
+		name =  first_night_law.1.d
+		custom_tooltip = first_night_law.1.d.tt
+		add_character_flag = jpc_court
+		remove_character_flag = jpc_direct_vassals
+		remove_character_flag = jpc_all_vassals
+		remove_character_flag = jpc_all
+	}
+}
+
+#newly wed wife triggers event to top leige with mod flag
+#wife is stored as "bride" scope
+#player saved as "cucker"
+#intermediate
+first_night_law.001 = {
+	hidden = yes
+	trigger = {
+	}
+	immediate = {
+		save_scope_as = bride
+		every_liege_or_above = {
+			limit = {
+				is_independent_ruler = yes
+				has_character_flag = jus_primae_noctis_flag
+			}
+			save_scope_as = cucker
+		}
+		
+		#court and children
+		if = {
+			limit = {
+				scope:cucker = {has_character_flag = jpc_court}
+				OR = {
+						is_courtier_of = scope:cucker
+						is_close_or_extended_family_of = scope:cucker
+						primary_spouse = {is_close_or_extended_family_of = scope:cucker}
+					}
+				NOT = {primary_spouse = scope:cucker}
+			}
+			scope:cucker = {trigger_event = first_night_law.002}
+		}
+		
+		
+		#all vassals, court, and children
+		else_if = {
+			limit = {
+				scope:cucker = {has_character_flag = jpc_all_vassals}
+				OR = {
+						is_courtier_of = scope:cucker
+						is_vassal_or_below_of = scope:cucker
+						is_close_or_extended_family_of = scope:cucker
+						primary_spouse = {is_vassal_or_below_of = scope:cucker}
+						primary_spouse = {is_close_or_extended_family_of = scope:cucker}
+					}
+				NOT = {primary_spouse = scope:cucker}
+			}
+			scope:cucker = {trigger_event = first_night_law.002}
+		}
+		
+		#direct vassals, court, and children
+		else_if = {
+			limit = {
+				scope:cucker = {has_character_flag = jpc_direct_vassals}
+				OR = {
+						is_courtier_of = scope:cucker
+						is_vassal_of = scope:cucker
+						is_close_or_extended_family_of = scope:cucker
+						primary_spouse = {is_vassal_of = scope:cucker}
+						primary_spouse = {is_close_or_extended_family_of = scope:cucker}
+					}
+				NOT = {primary_spouse = scope:cucker}
+			}
+			scope:cucker = {trigger_event = first_night_law.002}
+		}
+		
+		#all in realm
+		else_if = {
+			limit = {
+				scope:cucker = {has_character_flag = jpc_all}
+				NOT = {primary_spouse = scope:cucker}
+			}
+			scope:cucker = {trigger_event = first_night_law.002}
+		}
+	}	
+} 
+
+#the top liege is root in this event
+#this is what shows up as an event in-game
+first_night_law.002 = {
+	type = character_event
+	title = first_night_law.002.t
+	desc = first_night_law.002.desc
+	theme = marriage
+	
+	left_portrait = {
+		character = ROOT
+		animation = flirtation
+	}
+	
+	right_portrait = {
+		character = scope:bride
+		animation = shame
+	}
+	lower_right_portrait = {
+		character = scope:bride.primary_spouse
+	}
+	
+	
+	#take - let us get over with it quickly
+	option = {
+		name = first_night_law.002.c
+		custom_tooltip = jus_lay_with_bride.tt
+		if = {
+			limit = {
+				scope:bride = {is_pregnant = yes}
+			}
+			scope:bride = {add_character_flag = jus_already_pregnancy}	
+		}
+		hidden_effect = {
+				carn_had_sex_with_effect = {
+					CHARACTER_1 = root
+					CHARACTER_2 = scope:bride
+					C1_PREGNANCY_CHANCE = pregnancy_chance
+					C2_PREGNANCY_CHANCE = pregnancy_chance
+					STRESS_EFFECTS = yes
+					DRAMA = no
+				}
+		}
+		if = {
+			limit = {
+				scope:bride = {
+						is_pregnant = yes
+						NOT = {has_character_flag = jus_already_pregnancy}
+				}
+			}
+			scope:bride = {add_character_flag = jus_pregnancy}			
+		}
+		scope:bride = {remove_character_flag = jus_already_pregnancy}
+		#adds negative opinion to husband
+		reverse_add_opinion = {
+			target = scope:bride.primary_spouse
+			modifier = jus_noctis_husband
+		}
+		
+		#depending on conditions, the wife will either like you more or less
+		if = {
+			#if she likes liege enough
+			limit = {
+				OR = {
+					scope:bride = {
+						opinion = {
+							target = ROOT
+							value >= 70
+						}
+					}
+					scope:bride = {has_relation_lover = ROOT}
+					AND = {
+						scope:bride = {
+							opinion = {
+								target = ROOT
+								value >= 0
+							}
+						}
+						scope:bride = {
+							opinion = {
+								target = scope:bride.primary_spouse
+								value <= 0
+							}
+						}
+					}
+				}
+			}
+			#add positive opinion taking her
+			reverse_add_opinion = {
+				target = scope:bride
+				modifier = jus_wife_like
+			}
+		}
+		#if she does not like leige enough
+		else = {
+			#add negative opinion for taking her 
+			reverse_add_opinion = {
+				target = scope:bride
+				modifier = jus_wife_hate
+			}
+		}
+	}
+	
+	#take  -  dutifully - lauch scene
+	option = {
+		name = first_night_law.002.a
+		custom_tooltip = jus_start_scene.tt 
+		if = {
+			limit = {
+				scope:bride = {is_pregnant = yes}
+			}
+			scope:bride = {add_character_flag = jus_already_pregnancy}	
+		}
+		show_as_tooltip = {
+		
+				carn_had_sex_with_effect = {
+					CHARACTER_1 = root
+					CHARACTER_2 = scope:bride
+					C1_PREGNANCY_CHANCE = pregnancy_chance
+					C2_PREGNANCY_CHANCE = pregnancy_chance
+					STRESS_EFFECTS = yes
+					DRAMA = no
+				}
+		}
+		hidden_effect = {	
+				carn_sex_scene_effect = {
+                   				PLAYER = root
+                    				TARGET = scope:bride
+						STRESS_EFFECTS = yes
+						DRAMA = no
+                		}
+		}
+		if = {
+			limit = {
+				scope:bride = {
+						is_pregnant = yes
+						NOT = {has_character_flag = jus_already_pregnancy}
+				}
+			}
+			scope:bride = {add_character_flag = jus_pregnancy}			
+		}
+		scope:bride = {remove_character_flag = jus_already_pregnancy}
+
+		#adds negative opinion to husband
+		reverse_add_opinion = {
+			target = scope:bride.primary_spouse
+			modifier = jus_noctis_husband
+		}
+		#depending on conditions, the wife will either like you more or less
+		if = {
+			#if she likes liege enough
+			limit = {
+				OR = {
+					scope:bride = {
+						opinion = {
+							target = ROOT
+							value >= 70
+						}
+					}
+					scope:bride = {has_relation_lover = ROOT}
+					AND = {
+						scope:bride = {
+							opinion = {
+								target = ROOT
+								value >= 0
+							}
+						}
+						scope:bride = {
+							opinion = {
+								target = scope:bride.primary_spouse
+								value <= 0
+							}
+						}
+					}
+				}
+			}
+			#add positive opinion taking her
+			reverse_add_opinion = {
+				target = scope:bride
+				modifier = jus_wife_like
+			}
+			if = {
+				limit = {
+					NOT = {scope:bride = {has_relation_lover = ROOT}}
+				}
+				set_relation_potential_lover = scope:bride
+			}
+		}
+		#if she does not like leige enough
+		else = {
+			#add negative opinion for taking her 
+			reverse_add_opinion = {
+				target = scope:bride
+				modifier = jus_wife_hate
+			}
+		}		
+	}
+	
+	#spare
+	option = {
+		name = first_night_law.002.b
+		#gives positive opinion to husband for sparing
+		reverse_add_opinion = {
+			target = scope:bride.primary_spouse
+			modifier = jus_noctis_husband_spared
+		}
+		scope:bride = {add_character_flag = has_had_jus_consideration}
+		#if she likes leige enough
+		if = {
+			limit = {
+				OR = {
+					scope:bride = {
+						opinion = {
+							target = ROOT
+							value >= 70
+						}
+					}
+					scope:bride = {has_relation_lover = ROOT}
+					AND = {
+						scope:bride = {
+							opinion = {
+								target = ROOT
+								value >= 0
+							}
+						}
+						scope:bride = {
+							opinion = {
+								target = scope:bride.primary_spouse
+								value <= 0
+							}
+						}
+					}
+				}
+			}
+			#add negative opinion for sparing her
+			reverse_add_opinion = {
+				target = scope:bride.
+				modifier = jus_noctis_wife_spared_bad
+			}
+		}
+		#if she does not like root enough
+		else = {
+			#add positive opinion for sparing her
+			reverse_add_opinion = {
+				target = scope:bride
+				modifier = jus_noctis_wife_spared_good
+			}
+		}
+	}
+} 
+
+
+#####################################################
+#Children Events
+
+#on birth on actions
+first_night_law.004 = {
+	hidden = yes
+	immediate = {
+		root.real_father = {
+			random_secret = { #Remove the secret
+				limit = {
+					secret_type = secret_disputed_heritage
+					secret_target = root
+				}
+				remove_secret = yes
+			}
+		}
+		
+		root.mother = {
+			random_secret = { #Remove the secret
+				limit = {
+					secret_type = secret_disputed_heritage
+					secret_target = root
+				}
+				remove_secret = yes
+			}
+			remove_character_flag = jus_pregnancy
+		}
+		
+		add_character_flag = child_of_jus
+	}
+}
+
+#on legitimization from child
+first_night_law.006 = {
+	hidden = yes
+	immediate = {
+		save_scope_as = child_jus_var
+		set_variable	= {
+			name = child_jus_var_prev_house
+			value = root.house
+		}
+		root.real_father = {
+			save_scope_as = father_jus_var
+			trigger_event = first_night_law.005
+		}
+	}
+}
+
+#legit event for father on interation
+first_night_law.005 = {
+	type = character_event
+	title = first_night_law.005.t
+	desc = first_night_law.005.desc
+	theme = dynasty
+	left_portrait = {
+		character = scope:father_jus_var
+		animation = personality_rational
+	}
+	
+	right_portrait = {
+		character = scope:child_jus_var
+		animation = ecstasy
+	}
+	lower_right_portrait = {
+		character = scope:child_jus_var.mother
+	}
+	
+	lower_left_portrait = {
+		character = scope:child_jus_var.father
+	}
+	
+	option = {
+		name = first_night_law.005.a
+		custom_tooltip = first_night_law.005.a.tt
+		reverse_add_opinion = {
+				target = scope:child_jus_var.mother 
+				modifier = legitimized_my_child_opinion
+		}
+		reverse_add_opinion = {
+					target = scope:child_jus_var.father
+					modifier = cuckolded_jus
+		}
+		scope:child_jus_var = {
+			hidden_effect = {
+				set_father = scope:father_jus_var
+				set_house = scope:father_jus_var.house
+				remove_trait = bastard
+				add_trait = legitimized_bastard
+			}
+			every_child = {
+					limit = { house = scope:child_jus_var.child_jus_var_prev_house }	
+					trigger_event = first_night_law.007				
+			}
+		}		
+	}	
+}
+
+#Correct dynasty of children of child
+first_night_law.007 = {
+	hidden = yes	
+	immediate = {
+			set_house = scope:father_jus_var.house
+			scope:father_jus_var.house.house_head = {
+				add_hook = {
+					target = root
+					type = house_head_hook
+				}
+			}
+			every_child = {
+				limit = { house = scope:child_jus_var.child_jus_var_prev_house }
+				trigger_event = first_night_law.007 
+			}
+	}
+}

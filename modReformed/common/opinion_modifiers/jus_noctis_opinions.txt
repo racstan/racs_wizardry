@@ -1,0 +1,39 @@
+jus_noctis_husband = {
+	opinion = -10
+	years = 1
+	decaying = yes
+}
+
+jus_noctis_husband_spared = {
+	opinion = 5
+	years = 1
+	decaying = yes
+}
+
+jus_noctis_wife_spared_good = {
+	opinion = 5
+	years = 1
+	decaying = yes
+}
+
+jus_wife_hate = {
+	opinion = -10
+	years = 1
+	decaying = yes
+}
+jus_wife_like = {
+	opinion = 15
+	years = 1
+	decaying = yes
+}
+jus_noctis_wife_spared_bad = {
+	opinion = -5
+	years = 1
+	decaying = yes
+}
+
+cuckolded_jus = {
+	opinion = -20
+	years = 1
+	decaying = yes
+}
