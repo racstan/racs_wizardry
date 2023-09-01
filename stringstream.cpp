@@ -38,6 +38,7 @@ int main() {
     vector<int> integers = parseInts(str);
     for(int i = 0; i < integers.size(); i++) {
         cout << integers[i] << "\n";
+        cout<<"Whh"
     }
     
     return 0;
