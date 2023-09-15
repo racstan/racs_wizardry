@@ -30,7 +30,6 @@ vector<int> parseInts(string str) {
     vector <int> v = {a,b,c,d,e,f};
     return v;
     }
-    
 }
 
 int main() {
