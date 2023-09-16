@@ -29,7 +29,7 @@ vector<int> parseInts(string str) {
         ss>>a>>ch>>b>>ch>>c>>ch>>d>>ch>>e>>ch>>f;
     vector <int> v = {a,b,c,d,e,f};
     return v;
-    }
+    } 
 }
 
 int main() {
