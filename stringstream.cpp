@@ -40,4 +40,4 @@ int main() {
         cout << integers[i] << "\n";
     }
     return 0;
-}         
+}           
