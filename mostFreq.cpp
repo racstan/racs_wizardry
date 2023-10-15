@@ -9,7 +9,7 @@ void mostFreq(int arr[],int size, int k){
     int tempCount =k;
     int tempElement = 0;
     if(k<=size){
-    for(int i=0;i<size;i++){
+    for(int i=0;i<size;i++){ 
         for(int j=i+1;j<size;j++){
             if(arr[i]==arr[j]){
                 sum+=1;
