@@ -40,4 +40,11 @@ int main(){
         for (int i = 0; i < arrSize; i++) {
             std::cout << arrPtr[i] << " ";
         }
+        std::cout << std::endl;
+
+        delete[] arrPtr; // Deallocate memory for the array
+        std::cout << "Memory deallocated." << std::endl;
+    } else {
+        std::cout << "Memory allocation failed." << std::endl;
+    }
 }
