@@ -33,7 +33,7 @@ int main(){
 
     if (arrPtr) {
         for (int i = 0; i < arrSize; i++) {
-            arrPtr[i] = i * 10; // Populate the array with values
+            arrPtr[i] = i * 10; 
         }
 
         std::cout << "Array elements: ";
@@ -42,7 +42,7 @@ int main(){
         }
         std::cout << std::endl;
 
-        delete[] arrPtr; // Deallocate memory for the array
+        delete[] arrPtr; 
         std::cout << "Memory deallocated." << std::endl;
     } else {
         std::cout << "Memory allocation failed." << std::endl;
