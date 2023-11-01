@@ -28,4 +28,16 @@ int main(){
     delete pvalue;
 
     pvalue = nullptr;
+    int arrSize = 5;
+    int* arrPtr = new int[arrSize]; // Dynamically allocate memory for an integer array
+
+    if (arrPtr) {
+        for (int i = 0; i < arrSize; i++) {
+            arrPtr[i] = i * 10; // Populate the array with values
+        }
+
+        std::cout << "Array elements: ";
+        for (int i = 0; i < arrSize; i++) {
+            std::cout << arrPtr[i] << " ";
+        }
 }
