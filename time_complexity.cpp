@@ -15,7 +15,6 @@ void reverseArray(int* arr, int size) {
     int* end = arr + size - 1; // Point to the last element
 
     while (start < end) {
-        // Swap the elements pointed to by start and end
         int temp = *start;
         *start = *end;
         *end = temp;
