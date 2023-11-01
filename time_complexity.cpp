@@ -20,7 +20,6 @@ void reverseArray(int* arr, int size) {
         *start = *end;
         *end = temp;
 
-        // Move the pointers toward each other
         start++;
         end--;
     }
