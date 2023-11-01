@@ -55,4 +55,10 @@ int main(){
     } else {
         std::cout << "Memory allocation failed." << std::endl;
     }
+
+    int arr[] = {1, 2, 3, 4, 5};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    int sum = sumArrayElements(arr, size);
+    std::cout << "Sum of elements in the array: " << sum << std::endl;
 }
