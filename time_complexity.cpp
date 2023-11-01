@@ -16,7 +16,7 @@ int main(){
     cout<<value1<<endl;
     cout<<value2<<endl;
 
-    //dynamically allocate memory to store an integer
+    
     int *pvalue = new int;
     *pvalue = 10;
     if(pvalue==nullptr){
@@ -29,7 +29,7 @@ int main(){
 
     pvalue = nullptr;
     int arrSize = 5;
-    int* arrPtr = new int[arrSize]; // Dynamically allocate memory for an integer array
+    int* arrPtr = new int[arrSize]; 
 
     if (arrPtr) {
         for (int i = 0; i < arrSize; i++) {
