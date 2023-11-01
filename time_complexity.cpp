@@ -4,8 +4,8 @@ using namespace std;
 int sumArrayElements(int* arr, int size) {
     int sum = 0;
     for (int i = 0; i < size; i++) {
-        sum += *arr; // Add the value pointed to by arr to the sum
-        arr++; // Move the pointer to the next element
+        sum += *arr; 
+        arr++; 
     }
     return sum;
 }
