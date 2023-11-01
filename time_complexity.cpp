@@ -18,7 +18,6 @@ void reverseArray(int* arr, int size) {
         int temp = *start;
         *start = *end;
         *end = temp;
-
         start++;
         end--;
     }
