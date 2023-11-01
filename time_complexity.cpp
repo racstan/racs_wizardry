@@ -1,6 +1,14 @@
 #include <iostream>
 using namespace std;
 
+int sumArrayElements(int* arr, int size) {
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
+        sum += *arr; // Add the value pointed to by arr to the sum
+        arr++; // Move the pointer to the next element
+    }
+    return sum;
+}
 int swap(int *ptr1, int* ptr2){
     int temp= *ptr1;
     *ptr1= *ptr2;
