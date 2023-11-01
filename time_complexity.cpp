@@ -9,6 +9,23 @@ int sumArrayElements(int* arr, int size) {
     }
     return sum;
 }
+
+void reverseArray(int* arr, int size) {
+    int* start = arr;
+    int* end = arr + size - 1; // Point to the last element
+
+    while (start < end) {
+        // Swap the elements pointed to by start and end
+        int temp = *start;
+        *start = *end;
+        *end = temp;
+
+        // Move the pointers toward each other
+        start++;
+        end--;
+    }
+}
+
 int swap(int *ptr1, int* ptr2){
     int temp= *ptr1;
     *ptr1= *ptr2;
