@@ -23,4 +23,5 @@ int main(){
     cout<<"Enter two numbers"<<endl;
     cin>>a;
     cin>>b;
+    intPair result = swap(a,b);
 }
