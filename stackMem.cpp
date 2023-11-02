@@ -7,4 +7,6 @@ void functionOnStack() {
 
 int main(){
     int mainVariable = 69;
+        std::cout << "Inside main: " << mainVariable << std::endl;
+
 }
