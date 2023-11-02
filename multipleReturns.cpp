@@ -20,4 +20,5 @@ intPair swap(int& x, int& y){
 
 int main(){
     int a, b;
+    cout<<"Enter two numbers"<<endl;
 }
