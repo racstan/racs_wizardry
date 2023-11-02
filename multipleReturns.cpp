@@ -13,3 +13,4 @@ intPair swap(int& x, int& y){
     x=y;
     y=temp;
     intPair result;
+    result.x = x;
