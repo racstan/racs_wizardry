@@ -24,4 +24,5 @@ int main(){
     cin>>a;
     cin>>b;
     intPair result = swap(a,b);
+    cout<<"Swapped numbers are "<<result.x<<" and "<<result.y<<endl;
 }
