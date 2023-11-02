@@ -13,5 +13,5 @@ int main(){
         std::cout << "Back inside main: " << mainVariable << std::endl;
     // Attempting to access stackVariable here would result in a compilation error,
     // as it's out of scope and not accessible in this function.
-
+        return 0;
 }
