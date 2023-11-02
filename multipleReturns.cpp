@@ -17,3 +17,7 @@ intPair swap(int& x, int& y){
     result.y = y;
     return result;
 }
+
+int main(){
+    
+}
