@@ -9,4 +9,6 @@ int main(){
     std::cout << "Static variable: " << staticVariable << std::endl;
 
     globalVariable = 100;
+    staticVariable = 50;
+
 }
