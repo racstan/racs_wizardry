@@ -13,5 +13,6 @@ int main(){
 
     std::cout << "Updated Global variable: " << globalVariable << std::endl;
     std::cout << "Updated Static variable: " << staticVariable << std::endl;
+    return 0;
 
 }
