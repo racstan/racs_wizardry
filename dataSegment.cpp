@@ -12,5 +12,6 @@ int main(){
     staticVariable = 50;
 
     std::cout << "Updated Global variable: " << globalVariable << std::endl;
+    std::cout << "Updated Static variable: " << staticVariable << std::endl;
 
 }
