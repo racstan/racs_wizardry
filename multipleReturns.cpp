@@ -15,3 +15,4 @@ intPair swap(int& x, int& y){
     intPair result;
     result.x = x;
     result.y = y;
+    return result;
