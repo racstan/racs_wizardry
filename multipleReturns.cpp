@@ -12,3 +12,4 @@ intPair swap(int& x, int& y){
     temp =x;
     x=y;
     y=temp;
+    intPair result;
