@@ -16,7 +16,7 @@ class B {
 };
 
 int main(){
-    
+    shared_ptr<A> a(new A());
 }
 }
 
