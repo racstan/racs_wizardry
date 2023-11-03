@@ -9,4 +9,7 @@ class A {
     ~A() { cout << "~A()" << endl; }
 };
 
-class B {}
+class B {
+    public:
+    B() { cout << "B()" << endl; }
+}
