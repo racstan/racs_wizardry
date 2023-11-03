@@ -12,3 +12,7 @@ class B {
     B() { cout << "B()" << endl; }
     ~B() { cout << "~B()" << endl; }
 };
+
+int main(){
+    
+}
