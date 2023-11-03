@@ -18,6 +18,7 @@ class B {
 int main(){
     shared_ptr<A> a(new A());
     shared_ptr<B> b(new B());
+    return 0;
 }
 }
 
