@@ -20,5 +20,4 @@ int main(){
     shared_ptr<B> b(new B());
     return 0;
 }
-}
 
