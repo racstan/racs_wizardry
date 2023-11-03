@@ -15,4 +15,5 @@ class B {
 
 int main(){
     unique_ptr<A> a(new A());
+    unique_ptr<B> b(new B());
 }
