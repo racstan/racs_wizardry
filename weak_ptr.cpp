@@ -17,3 +17,8 @@ class B {
 
 int main(){
     shared_ptr<A> a(new A());
+    shared_ptr<B> b(new B());
+    weak_ptr<A> w(a);
+    return 0;
+}
+
