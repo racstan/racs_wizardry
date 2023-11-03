@@ -14,5 +14,5 @@ class B {
 };
 
 int main(){
-    
+    unique_ptr<A> a(new A());
 }
