@@ -12,5 +12,6 @@ public:
 class B {
     public:
     B() { cout << "B()" << endl; }
+    ~B() { cout << "~B()" << endl; }
 }
 
