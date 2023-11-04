@@ -25,13 +25,13 @@ int main() {
         throw CustomException();
          } catch (const std::runtime_error& e) {
             std::cerr << "Caught runtime_error: " << e.what() << std::endl;
-            } catch (const std::out_of_range& e) {
-                 std::cerr << "Caught out_of_range: " << e.what() << std::endl;
-                     } catch (const CustomException& e) {
-        std::cerr << "Caught CustomException: " << e.what() << std::endl;
-    } catch (const std::exception& e) {
-        std::cerr << "Caught a general exception: " << e.what() << std::endl;
-    } catch (...) {
-        std::cerr << "Caught an unknown exception" << std::endl;
-    }
-        std::cout << "Program continues after exception handling." << std::endl;
+        } catch (const std::out_of_range& e) {
+            std::cerr << "Caught out_of_range: " << e.what() << std::endl;
+        } catch (const CustomException& e) {
+            std::cerr << "Caught CustomException: " << e.what() << std::endl;
+        } catch (const std::exception& e) {
+            std::cerr << "Caught a general exception: " << e.what() << std::endl;
+        } catch (...) {
+            std::cerr << "Caught an unknown exception" << std::endl;
+        }
+            std::cout << "Program continues after exception handling." << std::endl;
