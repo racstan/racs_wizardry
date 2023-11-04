@@ -10,7 +10,9 @@ class exceptions{
         }
         void divide(){
             int c;
-            
+            try{
+                
+            }
         }
 };
 }
