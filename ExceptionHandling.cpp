@@ -7,3 +7,6 @@ class CustomException : public std::exception {
         return "Custom Exception!";
          }
 };
+
+int main() {
+    try {
