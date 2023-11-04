@@ -2,5 +2,6 @@
 using namespace std;
 
 class exceptions{
-    
+    public:
+};
 }
