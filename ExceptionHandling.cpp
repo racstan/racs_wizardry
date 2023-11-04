@@ -25,3 +25,4 @@ int main() {
         throw CustomException();
          } catch (const std::runtime_error& e) {
             std::cerr << "Caught runtime_error: " << e.what() << std::endl;
+            } catch (const std::out_of_range& e) {
