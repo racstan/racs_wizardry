@@ -20,3 +20,5 @@ int main() {
         int index = 4;
          if (index < 0 || index >= 3) {
             throw std::out_of_range("Index out of bounds");
+             }
+        int element = arr[index];
