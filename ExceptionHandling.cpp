@@ -27,3 +27,4 @@ int main() {
             std::cerr << "Caught runtime_error: " << e.what() << std::endl;
             } catch (const std::out_of_range& e) {
                  std::cerr << "Caught out_of_range: " << e.what() << std::endl;
+                     } catch (const CustomException& e) {
