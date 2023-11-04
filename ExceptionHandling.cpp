@@ -8,5 +8,8 @@ class exceptions{
             cout << "Enter the value of a and b: ";
             cin >> a >> b;
         }
+        void divide(){
+            
+        }
 };
 }
