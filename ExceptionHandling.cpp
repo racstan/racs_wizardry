@@ -23,3 +23,4 @@ int main() {
              }
         int element = arr[index];
         throw CustomException();
+         } catch (const std::runtime_error& e) {
