@@ -19,3 +19,4 @@ int main() {
         int arr[3] = {1, 2, 3};
         int index = 4;
          if (index < 0 || index >= 3) {
+            throw std::out_of_range("Index out of bounds");
