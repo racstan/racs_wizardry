@@ -33,3 +33,5 @@ int main() {
         std::cerr << "Caught a general exception: " << e.what() << std::endl;
     } catch (...) {
         std::cerr << "Caught an unknown exception" << std::endl;
+    }
+        std::cout << "Program continues after exception handling." << std::endl;
