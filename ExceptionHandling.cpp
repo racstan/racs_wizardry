@@ -30,3 +30,4 @@ int main() {
                      } catch (const CustomException& e) {
         std::cerr << "Caught CustomException: " << e.what() << std::endl;
     } catch (const std::exception& e) {
+        std::cerr << "Caught a general exception: " << e.what() << std::endl;
