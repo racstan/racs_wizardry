@@ -29,3 +29,4 @@ int main() {
                  std::cerr << "Caught out_of_range: " << e.what() << std::endl;
                      } catch (const CustomException& e) {
         std::cerr << "Caught CustomException: " << e.what() << std::endl;
+    } catch (const std::exception& e) {
