@@ -13,3 +13,4 @@ int main() {
         int numerator = 10;
         int denominator = 0;
         if (denominator == 0) {
+            throw std::runtime_error("Division by zero");
