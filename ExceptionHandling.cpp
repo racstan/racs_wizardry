@@ -32,3 +32,4 @@ int main() {
     } catch (const std::exception& e) {
         std::cerr << "Caught a general exception: " << e.what() << std::endl;
     } catch (...) {
+        std::cerr << "Caught an unknown exception" << std::endl;
