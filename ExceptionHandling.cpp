@@ -12,3 +12,4 @@ int main() {
     try {
         int numerator = 10;
         int denominator = 0;
+        if (denominator == 0) {
