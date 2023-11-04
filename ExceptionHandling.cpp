@@ -12,7 +12,8 @@ class exceptions{
             int c;
             try{
                 if(b==0){
-                    
+                    throw b;
+
                 }
 
             }
