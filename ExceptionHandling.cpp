@@ -22,3 +22,4 @@ int main() {
             throw std::out_of_range("Index out of bounds");
              }
         int element = arr[index];
+        throw CustomException();
