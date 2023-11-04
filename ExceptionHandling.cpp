@@ -18,3 +18,4 @@ int main() {
         int result = numerator / denominator;
         int arr[3] = {1, 2, 3};
         int index = 4;
+         if (index < 0 || index >= 3) {
