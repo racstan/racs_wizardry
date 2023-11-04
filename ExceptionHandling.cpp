@@ -16,3 +16,4 @@ int main() {
             throw std::runtime_error("Division by zero");
             }
         int result = numerator / denominator;
+        int arr[3] = {1, 2, 3};
