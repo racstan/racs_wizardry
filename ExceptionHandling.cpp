@@ -9,6 +9,7 @@ class exceptions{
             cin >> a >> b;
         }
         void divide(){
+            int c;
             
         }
 };
