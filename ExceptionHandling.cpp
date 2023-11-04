@@ -11,7 +11,10 @@ class exceptions{
         void divide(){
             int c;
             try{
-                
+                if(b==0){
+                    
+                }
+
             }
         }
 };
