@@ -24,3 +24,4 @@ int main() {
         int element = arr[index];
         throw CustomException();
          } catch (const std::runtime_error& e) {
+            std::cerr << "Caught runtime_error: " << e.what() << std::endl;
