@@ -10,3 +10,5 @@ class CustomException : public std::exception {
 
 int main() {
     try {
+        int numerator = 10;
+        int denominator = 0;
