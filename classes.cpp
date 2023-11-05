@@ -27,3 +27,4 @@ class Person {
     static const int maxAge = 100;
 int Person::count = 0;
 int main() {
+    Person person1("John", 30);
