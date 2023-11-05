@@ -19,13 +19,14 @@ class Person {
             return count;
         }
         private:
-    std::string name;
-    int age;
-    void privateFunction() {
-        std::cout << "This is a private function." << std::endl;
-    }
-    static const int maxAge = 100;
-int Person::count = 0;
+        std::string name;
+        int age;
+        void privateFunction() {
+            std::cout << "This is a private function." << std::endl;
+        }
+        static const int maxAge = 100;
+        int Person::count = 0;
+        
 int main() {
     Person person1("John", 30);
     Person person2("Alice", 25);
@@ -34,3 +35,5 @@ int main() {
     person1.setAge(35);
     std::cout << "Updated age of Person 1: " << person1.getAge() << " years old." << std::endl;
     std::cout << "Total number of persons: " << Person::getCount() << std::endl;
+    return 0;
+}
