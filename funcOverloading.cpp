@@ -18,3 +18,4 @@ int main() {
     std::cout << "Result of double addition: " << result2 << std::endl;
     std::cout << "Result of string concatenation: " << result3 << std::endl;
 return 0;
+}
