@@ -8,3 +8,7 @@ class Person {
         void setAge(int newAge){
             age = newAge;
         }
+
+        int getAge() const {
+            return age;
+        }
