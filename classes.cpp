@@ -29,3 +29,4 @@ int Person::count = 0;
 int main() {
     Person person1("John", 30);
     Person person2("Alice", 25);
+    std::cout << "Person 1: " << person1.getAge() << " years old." << std::endl;
