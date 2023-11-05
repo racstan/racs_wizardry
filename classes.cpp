@@ -18,3 +18,4 @@ class Person {
         static int getCount(){
             return count;
         }
+        private:
