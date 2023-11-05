@@ -32,3 +32,4 @@ int main() {
     std::cout << "Person 1: " << person1.getAge() << " years old." << std::endl;
     std::cout << "Person 2: " << person2.getAge() << " years old." << std::endl;
     person1.setAge(35);
+    std::cout << "Updated age of Person 1: " << person1.getAge() << " years old." << std::endl;
