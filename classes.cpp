@@ -19,3 +19,5 @@ class Person {
             return count;
         }
         private:
+    std::string name;
+    int age;
