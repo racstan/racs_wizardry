@@ -21,3 +21,4 @@ class Person {
         private:
     std::string name;
     int age;
+    void privateFunction() {
