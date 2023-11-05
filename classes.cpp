@@ -25,3 +25,4 @@ class Person {
         std::cout << "This is a private function." << std::endl;
     }
     static const int maxAge = 100;
+int Person::count = 0;
