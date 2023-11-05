@@ -24,3 +24,4 @@ class Person {
     void privateFunction() {
         std::cout << "This is a private function." << std::endl;
     }
+    static const int maxAge = 100;
