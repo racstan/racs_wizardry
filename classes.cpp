@@ -12,3 +12,9 @@ class Person {
         int getAge() const {
             return age;
         }
+
+        static int count;
+
+        static int getCount(){
+            return count;
+        }
