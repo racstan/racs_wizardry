@@ -14,4 +14,5 @@ int main() {
      Person person2={"Jane",21};
     std::cout << "Person 1: " << person1.name << ", " << person1.age << " years old." << std::endl;
         std::cout << "Person 2: " << person2.name << ", " << person2.age << " years old." << std::endl;
-
+return 0;
+}
