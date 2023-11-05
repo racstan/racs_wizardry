@@ -16,3 +16,4 @@ int main() {
     std::string result3 = add("Hello, ", "world!");
     std::cout << "Result of int addition: " << result1 << std::endl;
     std::cout << "Result of double addition: " << result2 << std::endl;
+    std::cout << "Result of string concatenation: " << result3 << std::endl;
