@@ -9,3 +9,4 @@ struct Person{
 int main() {
     Person person1;
      person1.name = "John";
+     person1.age =20;
