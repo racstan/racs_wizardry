@@ -12,3 +12,4 @@ std::string add(const std::string& str1, const std::string& str2) {
 
 int main() {
     int result1 = add(5, 7);
+    double result2 = add(3.14, 2.71);
