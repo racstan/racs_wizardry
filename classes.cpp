@@ -28,3 +28,4 @@ class Person {
 int Person::count = 0;
 int main() {
     Person person1("John", 30);
+    Person person2("Alice", 25);
