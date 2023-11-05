@@ -14,3 +14,4 @@ int main() {
     int result1 = add(5, 7);
     double result2 = add(3.14, 2.71);
     std::string result3 = add("Hello, ", "world!");
+    std::cout << "Result of int addition: " << result1 << std::endl;
