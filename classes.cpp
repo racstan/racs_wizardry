@@ -23,3 +23,4 @@ class Person {
     int age;
     void privateFunction() {
         std::cout << "This is a private function." << std::endl;
+    }
