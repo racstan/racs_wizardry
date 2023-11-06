@@ -26,6 +26,7 @@ class RuleOfFiveExample {
             return *this;
         delete[] data;
         data = new char[strlen(other.data) + 1];
+        strcpy(data, other.data);
 
 
 
