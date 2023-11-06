@@ -22,7 +22,7 @@ class RuleOfFiveExample {
 }
 
     RuleOfFiveExample& operator=(const RuleOfFiveExample& other) {
-
+        if (this == &other)
 
 
 
