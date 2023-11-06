@@ -34,7 +34,7 @@ if (this == &other)
  };
  int main() {
     RuleOfThreeExample obj1("Hello");
-
+    RuleOfThreeExample obj2 = obj1;
 
 
 
