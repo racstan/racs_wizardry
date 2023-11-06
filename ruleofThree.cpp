@@ -21,6 +21,8 @@ public:
 
     RuleOfThreeExample& operator=(const RuleOfThreeExample& other) {
 if (this == &other)
+            return *this;
+
 
 
 
