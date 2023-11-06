@@ -21,6 +21,7 @@ class RuleOfFiveExample {
         strcpy(data, other.data);
 }
 
+    RuleOfFiveExample& operator=(const RuleOfFiveExample& other) {
 
 
 
