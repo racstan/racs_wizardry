@@ -33,6 +33,7 @@ if (this == &other)
  }
  };
  int main() {
+    RuleOfThreeExample obj1("Hello");
 
 
 
