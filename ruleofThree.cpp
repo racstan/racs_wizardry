@@ -27,6 +27,7 @@ if (this == &other)
         data = new char[strlen(other.data) + 1];
         strcpy(data, other.data);
         return *this;
+    }
 
 
 
