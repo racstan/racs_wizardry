@@ -19,6 +19,9 @@ public:
         strcpy(data, other.data);
 }
 
+    RuleOfThreeExample& operator=(const RuleOfThreeExample& other) {
+
+
 
 
 
