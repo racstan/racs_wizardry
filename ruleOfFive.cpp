@@ -9,4 +9,5 @@ class RuleOfFiveExample {
     public:
     RuleOfFiveExample(const char* str){
         data = new char[std::strlen(str) + 1];
+        strcpy(data, str);
     }
