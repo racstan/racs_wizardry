@@ -24,6 +24,8 @@ if (this == &other)
             return *this;
         delete[] data;
 
+        data = new char[strlen(other.data) + 1];
+
 
 
 
