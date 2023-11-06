@@ -4,3 +4,7 @@
 
 class RuleOfFiveExample {
     private:
+    char* data;
+
+    public:
+    RuleOfFiveExample(const char* str){}
