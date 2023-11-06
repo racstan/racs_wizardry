@@ -37,6 +37,7 @@ if (this == &other)
     RuleOfThreeExample obj2 = obj1;
 
     obj2.displayData();
+    RuleOfThreeExample obj3("World");
 
 
 
