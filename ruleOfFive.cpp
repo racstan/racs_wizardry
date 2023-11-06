@@ -17,3 +17,5 @@ class RuleOfFiveExample {
     }
 
     RuleOfFiveExample(const RuleOfFiveExample& other) {
+        data = new char[strlen(other.data) + 1];
+
