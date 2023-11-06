@@ -29,6 +29,7 @@ if (this == &other)
         return *this;
     }
     void displayData() {
+        std::cout << "Data: " << data << std::endl;
 
 
 
