@@ -6,3 +6,4 @@ private:
 
 public:
     RuleOfThreeExample(const char* str) {
+        data = new char[strlen(str) + 1];
