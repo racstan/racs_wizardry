@@ -24,6 +24,7 @@ class RuleOfFiveExample {
     RuleOfFiveExample& operator=(const RuleOfFiveExample& other) {
         if (this == &other)
             return *this;
+        delete[] data;
 
 
 
