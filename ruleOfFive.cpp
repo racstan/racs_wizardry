@@ -13,4 +13,5 @@ class RuleOfFiveExample {
     }
 
     ~RuleOfFiveExample(){
+        delete[] data;
     }
