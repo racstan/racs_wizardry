@@ -10,6 +10,9 @@ public:
         strcpy(data, str);
 }
 
+    ~RuleOfThreeExample() {
+
+
 
 
 
