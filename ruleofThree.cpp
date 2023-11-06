@@ -14,6 +14,9 @@ public:
         delete[] data;
 }
 
+    RuleOfThreeExample(const RuleOfThreeExample& other) {
+
+
 
 
 
