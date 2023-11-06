@@ -32,6 +32,8 @@ if (this == &other)
         std::cout << "Data: " << data << std::endl;
  }
  };
+ int main() {
+
 
 
 
