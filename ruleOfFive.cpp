@@ -3,3 +3,4 @@
 #include <utility>
 
 class RuleOfFiveExample {
+    private:
