@@ -15,3 +15,5 @@ class RuleOfFiveExample {
     ~RuleOfFiveExample(){
         delete[] data;
     }
+
+    RuleOfFiveExample(const RuleOfFiveExample& other) {
