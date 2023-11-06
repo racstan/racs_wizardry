@@ -7,4 +7,6 @@ class RuleOfFiveExample {
     char* data;
 
     public:
-    RuleOfFiveExample(const char* str){}
+    RuleOfFiveExample(const char* str){
+        data = new char[std::strlen(str) + 1];
+    }
