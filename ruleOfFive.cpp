@@ -11,3 +11,6 @@ class RuleOfFiveExample {
         data = new char[std::strlen(str) + 1];
         strcpy(data, str);
     }
+
+    ~RuleOfFiveExample(){
+    }
