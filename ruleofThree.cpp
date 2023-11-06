@@ -28,6 +28,9 @@ if (this == &other)
         strcpy(data, other.data);
         return *this;
     }
+    void displayData() {
+
+
 
 
 
