@@ -20,4 +20,6 @@ public:
         std::cout << "Class C" << std::endl;
 }
 };
+int main() {
+    
 }
