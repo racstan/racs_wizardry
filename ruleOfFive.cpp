@@ -34,6 +34,7 @@ class RuleOfFiveExample {
 }
 };
 int main() {
+    RuleOfFiveExample obj1("Hello");
 
 
 
