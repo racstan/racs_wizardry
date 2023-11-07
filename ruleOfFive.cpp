@@ -51,7 +51,8 @@ obj6 = std::move(obj5);
 
     obj6.displayData();
 
-
+    return 0;
+}
 
 
 
