@@ -9,5 +9,6 @@ class A{
 
 class B {
     public:
+    void printB() {
 
 }
