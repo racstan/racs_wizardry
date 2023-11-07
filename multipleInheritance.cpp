@@ -13,4 +13,7 @@ class B {
         std::cout << "Class B" << std::endl;
   }
 };
+
+class C : public A, public B {
+
 }
