@@ -7,6 +7,7 @@ int main(){
     numbers.push_back(2);
     numbers.push_back(3);
     for (const int& num : numbers) {
+        std::cout << num << " ";
 
 
 
