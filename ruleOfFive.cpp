@@ -29,6 +29,22 @@ class RuleOfFiveExample {
         strcpy(data, other.data);
         return *this;
 }
+    void displayData() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
