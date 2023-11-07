@@ -43,7 +43,7 @@ int main() {
 
     obj3.displayData();
     RuleOfFiveExample obj4("Move");
-
+RuleOfFiveExample obj5 = std::move(obj4);
 
 
 
