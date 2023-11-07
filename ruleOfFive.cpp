@@ -32,7 +32,7 @@ class RuleOfFiveExample {
     void displayData() {
         std::cout << "Data: " << data << std::endl;
 }
-
+};
 
 
 
