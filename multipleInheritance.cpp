@@ -23,5 +23,6 @@ public:
 int main() {
         C obj;
     obj.printA();
+    obj.printB();
 
 }
