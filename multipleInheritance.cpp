@@ -25,5 +25,6 @@ int main() {
     obj.printA();
     obj.printB();
     obj.printC();
+    return 0;
 
 }
