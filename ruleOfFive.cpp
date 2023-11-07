@@ -37,6 +37,7 @@ int main() {
     RuleOfFiveExample obj1("Hello");
     RuleOfFiveExample obj2 = obj1;
 
+    obj2.displayData();
 
 
 
