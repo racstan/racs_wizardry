@@ -9,6 +9,7 @@ int main(){
     for (const int& num : numbers) {
         std::cout << num << " ";
     }
+    std::cout << std::endl;
 
 
 
