@@ -30,6 +30,7 @@ class RuleOfFiveExample {
         return *this;
 }
     void displayData() {
+        std::cout << "Data: " << data << std::endl;
 
 
 
