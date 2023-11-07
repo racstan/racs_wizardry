@@ -24,5 +24,6 @@ int main() {
         C obj;
     obj.printA();
     obj.printB();
+    obj.printC();
 
 }
