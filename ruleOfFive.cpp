@@ -41,6 +41,7 @@ int main() {
     RuleOfFiveExample obj3("World");
     obj3 = obj1;
 
+    obj3.displayData();
 
 
 
