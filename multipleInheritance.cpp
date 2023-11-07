@@ -17,5 +17,7 @@ class B {
 class C : public A, public B {
 public:
     void printC() {
-
+        std::cout << "Class C" << std::endl;
+}
+};
 }
