@@ -10,5 +10,6 @@ class A{
 class B {
     public:
     void printB() {
+        std::cout << "Class B" << std::endl;
 
 }
