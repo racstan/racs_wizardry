@@ -42,6 +42,7 @@ int main() {
     obj3 = obj1;
 
     obj3.displayData();
+    RuleOfFiveExample obj4("Move");
 
 
 
