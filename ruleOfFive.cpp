@@ -39,7 +39,7 @@ int main() {
 
     obj2.displayData();
     RuleOfFiveExample obj3("World");
-
+    obj3 = obj1;
 
 
 
