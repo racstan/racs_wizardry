@@ -6,4 +6,7 @@ class A{
         std::cout << "Class A" << std::endl;
     }
 };
+
+class B {
+
 }
