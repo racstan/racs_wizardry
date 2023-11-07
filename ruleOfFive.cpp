@@ -33,6 +33,7 @@ class RuleOfFiveExample {
         std::cout << "Data: " << data << std::endl;
 }
 };
+int main() {
 
 
 
