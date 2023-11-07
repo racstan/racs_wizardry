@@ -10,3 +10,4 @@ class Animal{
 class Mammal : public virtual Animal {
 public:
     void giveBirth() {
+        std::cout << "Mammal gives birth" << std::endl;
