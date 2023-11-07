@@ -46,8 +46,8 @@ int main() {
 RuleOfFiveExample obj5 = std::move(obj4);
 
 obj5.displayData();
-
-
+RuleOfFiveExample obj6("Transfer");
+obj6 = std::move(obj5);
 
 
 
