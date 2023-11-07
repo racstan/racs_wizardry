@@ -8,3 +8,5 @@ class Animal{
 };
 
 class Mammal : public virtual Animal {
+public:
+    void giveBirth() {
