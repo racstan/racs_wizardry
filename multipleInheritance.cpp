@@ -8,5 +8,6 @@ class A{
 };
 
 class B {
+    public:
 
 }
