@@ -21,5 +21,6 @@ public:
 }
 };
 int main() {
-    
+        C obj;
+
 }
