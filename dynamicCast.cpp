@@ -26,6 +26,7 @@ int main() {
         std::cout << "Dynamic cast successful:" << std::endl;
         derivedPtr->print();
     } else {
+        std::cout << "Dynamic cast failed" << std::endl;
 
 
 
