@@ -5,3 +5,4 @@ int main() {
     int nonConstValue = 0;
 
     const int* ptrToConstValue = &constValue;
+    int* ptrToNonConstValue = &nonConstValue;
