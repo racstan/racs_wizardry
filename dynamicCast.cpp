@@ -14,3 +14,5 @@ public:
         std::cout << "Derived class" << std::endl;
 }
 };
+int main() {
+    Base baseObj;
