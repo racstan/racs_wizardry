@@ -6,3 +6,5 @@ int main() {
 
     const int* ptrToConstValue = &constValue;
     int* ptrToNonConstValue = &nonConstValue;
+
+    int& refToConstValue = const_cast<int&>(constValue);
