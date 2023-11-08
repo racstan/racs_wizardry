@@ -17,3 +17,6 @@ public:
 int main() {
     Base baseObj;
     Derived derivedObj;
+
+    Base* basePtr = &derivedObj;
+
