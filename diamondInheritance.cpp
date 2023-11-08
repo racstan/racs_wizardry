@@ -19,3 +19,4 @@ public:
         std::cout << "Bat can fly" << std::endl;
  }
  };
+ int main() {
