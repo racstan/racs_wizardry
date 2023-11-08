@@ -17,3 +17,4 @@ class Bat : public Mammal, public Bird {
 public:
     void fly() {
         std::cout << "Bat can fly" << std::endl;
+ }
