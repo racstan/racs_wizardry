@@ -12,3 +12,5 @@ class Mammal : public virtual Animal {
 
 class Bird : public virtual Animal {
 };
+
+class Bat : public Mammal, public Bird {
