@@ -23,6 +23,7 @@ int main() {
     Derived* derivedPtr = dynamic_cast<Derived*>(basePtr);
 
     if (derivedPtr) {
+        std::cout << "Dynamic cast successful:" << std::endl;
 
 
 
