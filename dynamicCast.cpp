@@ -6,3 +6,4 @@ class Base {
         std::cout << "Base class" << std::endl;
 
 }
+};
