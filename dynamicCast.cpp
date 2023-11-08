@@ -10,3 +10,4 @@ class Base {
 
 class Derived : public Base {
 public:
+    void print() override {
