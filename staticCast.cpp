@@ -7,3 +7,4 @@ int main() {
     std::cout << "Double value: " << myDouble << std::endl;
     std::cout << "Int value after casting: " << myInt << std::endl;
     return 0;
+}
