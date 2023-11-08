@@ -20,3 +20,4 @@ public:
  }
  };
  int main() {
+    Bat bat;
