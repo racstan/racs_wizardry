@@ -20,3 +20,6 @@ int main() {
 
     Base* basePtr = &derivedObj;
 
+    Derived* derivedPtr = dynamic_cast<Derived*>(basePtr);
+
+
