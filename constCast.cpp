@@ -9,3 +9,5 @@ int main() {
 
     int& refToConstValue = const_cast<int&>(constValue);
     refToConstValue = 100;
+
+    std::cout << "constValue after modification: " << constValue << std::endl;
