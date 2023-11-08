@@ -23,3 +23,4 @@ public:
     Bat bat;
 bat.speak();
 bat.fly();
+    return 0;
