@@ -14,3 +14,5 @@ int main() {
 
     int* ptrToNonConstFromConst = const_cast<int*>(ptrToConstValue);
     *ptrToNonConstFromConst = 200;
+
+    std::cout << "constValue via ptrToConstValue after modification: " << *ptrToConstValue << std::endl;
