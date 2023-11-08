@@ -8,3 +8,4 @@ int main() {
     int* ptrToNonConstValue = &nonConstValue;
 
     int& refToConstValue = const_cast<int&>(constValue);
+    refToConstValue = 100;
