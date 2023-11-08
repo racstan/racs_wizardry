@@ -21,3 +21,4 @@ public:
  };
  int main() {
     Bat bat;
+bat.speak();
