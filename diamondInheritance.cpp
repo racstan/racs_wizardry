@@ -9,3 +9,6 @@ class Animal{
 
 class Mammal : public virtual Animal {
 };
+
+class Bird : public virtual Animal {
+};
