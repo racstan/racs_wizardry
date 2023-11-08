@@ -22,4 +22,7 @@ int main() {
 
     Derived* derivedPtr = dynamic_cast<Derived*>(basePtr);
 
+    if (derivedPtr) {
+
+
 
