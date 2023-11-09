@@ -9,3 +9,4 @@ class Animal {
 class Dog : public Animal {
 public:
     void makeSound() override {
+        std::cout << "Bark" << std::endl;
