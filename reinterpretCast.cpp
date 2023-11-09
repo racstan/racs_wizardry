@@ -9,6 +9,7 @@ int main() {
     std::cout << "Pointer address: " << ptr << std::endl;
     std::cout << "Character pointer address: " << charPtr << std::endl;
 
-
+    return 0;
+}
 
 
