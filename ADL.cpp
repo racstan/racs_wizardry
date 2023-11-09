@@ -22,3 +22,5 @@ int main() {
 
   std::cout << v1 << " + " << v2 << " = ";
   std::cout << v1 + v2 << std::endl;
+  return 0;
+}
