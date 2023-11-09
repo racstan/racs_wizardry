@@ -11,3 +11,5 @@ class Vector{
     os << "(" << v.x << ", " << v.y << ")";
     return os;
 }
+
+private:
