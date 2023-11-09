@@ -22,3 +22,4 @@ int main() {
     std::cout << "static_cast: " << myInt << std::endl;
     Animal* animalPtr = new Dog();
     Dog* dogPtr = dynamic_cast<Dog*>(animalPtr);
+    if (dogPtr) {
