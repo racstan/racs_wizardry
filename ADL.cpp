@@ -9,3 +9,4 @@ class Vector{
 
   friend std::ostream& operator<<(std::ostream& os, const Vector& v) {
     os << "(" << v.x << ", " << v.y << ")";
+    return os;
