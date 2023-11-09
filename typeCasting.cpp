@@ -13,3 +13,6 @@ public:
  }
 
     void fetch() {
+        std::cout << "Fetching the ball" << std::endl;
+}
+};       
