@@ -7,6 +7,7 @@ int main() {
 
     std::cout << "Value: " << value << std::endl;
     std::cout << "Pointer address: " << ptr << std::endl;
+    std::cout << "Character pointer address: " << charPtr << std::endl;
 
 
 
