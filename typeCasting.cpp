@@ -19,3 +19,4 @@ public:
 int main() {
     double myDouble = 3.14;
     int myInt = static_cast<int>(myDouble);
+    std::cout << "static_cast: " << myInt << std::endl;
