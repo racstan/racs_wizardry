@@ -14,3 +14,4 @@ class Vector{
 
 private:
   int x;
+  int y;
