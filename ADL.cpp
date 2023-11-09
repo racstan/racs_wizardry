@@ -21,3 +21,4 @@ int main() {
   Vector v2(3, 4);
 
   std::cout << v1 << " + " << v2 << " = ";
+  std::cout << v1 + v2 << std::endl;
