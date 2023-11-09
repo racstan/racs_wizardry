@@ -17,3 +17,4 @@ private:
   int y;
 };
 int main() {
+  Vector v1(1, 2);
