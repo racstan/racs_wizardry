@@ -6,6 +6,7 @@ int main() {
     char* charPtr = reinterpret_cast<char*>(ptr);
 
     std::cout << "Value: " << value << std::endl;
+    std::cout << "Pointer address: " << ptr << std::endl;
 
 
 
