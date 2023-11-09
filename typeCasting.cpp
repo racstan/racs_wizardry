@@ -21,3 +21,4 @@ int main() {
     int myInt = static_cast<int>(myDouble);
     std::cout << "static_cast: " << myInt << std::endl;
     Animal* animalPtr = new Dog();
+    Dog* dogPtr = dynamic_cast<Dog*>(animalPtr);
