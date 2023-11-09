@@ -23,3 +23,4 @@ int main() {
     Animal* animalPtr = new Dog();
     Dog* dogPtr = dynamic_cast<Dog*>(animalPtr);
     if (dogPtr) {
+        std::cout << "dynamic_cast: ";
