@@ -16,3 +16,4 @@ public:
         std::cout << "Fetching the ball" << std::endl;
 }
 };       
+int main() {
