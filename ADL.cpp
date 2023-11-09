@@ -13,3 +13,4 @@ class Vector{
 }
 
 private:
+  int x;
