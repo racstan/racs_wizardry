@@ -12,3 +12,4 @@ void printValues(First first, Rest... rest) {
 }
 
 int main() {
+    printValues(1, 2.5, "Hello", 'A');
