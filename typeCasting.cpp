@@ -28,3 +28,4 @@ int main() {
         dogPtr->fetch();
 } else {
     std::cout << "dynamic_cast failed" << std::endl;
+}
