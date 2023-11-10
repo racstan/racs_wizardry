@@ -10,6 +10,7 @@ void printTypeInfo() {
         std::cout << "This is not an integer type." << std::endl;
 }
     if (std::is_floating_point<T>::value) {
+        std::cout << "This is a floating-point type." << std::endl;
 
 
 
