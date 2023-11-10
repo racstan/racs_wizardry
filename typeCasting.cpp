@@ -39,4 +39,4 @@ int main() {
     double* doublePtr = reinterpret_cast<double*>(&intValue);
     std::cout << "reinterpret_cast: " << *doublePtr << std::endl;
     return 0;
-
+}
