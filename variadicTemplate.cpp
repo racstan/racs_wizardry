@@ -8,3 +8,4 @@ void printValues(T value) {
 template <typename First, typename... Rest>
 void printValues(First first, Rest... rest) {
     std::cout << first << ", ";
+    printValues(rest...);
