@@ -29,3 +29,4 @@ int main() {
 } else {
     std::cout << "dynamic_cast failed" << std::endl;
 }
+    delete animalPtr;
