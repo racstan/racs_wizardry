@@ -30,3 +30,4 @@ int main() {
     std::cout << "dynamic_cast failed" << std::endl;
 }
     delete animalPtr;
+    const int constValue = 42;
