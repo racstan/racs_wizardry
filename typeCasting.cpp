@@ -36,4 +36,5 @@ int main() {
     std::cout << "const_cast: " << nonConstRef << std::endl;
 
     int intValue = 123;
+    double* doublePtr = reinterpret_cast<double*>(&intValue);
 
