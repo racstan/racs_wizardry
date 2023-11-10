@@ -34,3 +34,6 @@ int main() {
     int& nonConstRef = const_cast<int&>(constValue);
     nonConstRef = 99;
     std::cout << "const_cast: " << nonConstRef << std::endl;
+
+    int intValue = 123;
+
