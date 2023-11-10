@@ -14,3 +14,4 @@ void printValue(T value) {
 int main() {
 printValue(42);
 printValue(3.14);
+printValue("Hello");
