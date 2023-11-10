@@ -12,3 +12,4 @@ void printValue(T value) {
 }
 
 int main() {
+printValue(42);
