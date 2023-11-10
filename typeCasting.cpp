@@ -38,4 +38,5 @@ int main() {
     int intValue = 123;
     double* doublePtr = reinterpret_cast<double*>(&intValue);
     std::cout << "reinterpret_cast: " << *doublePtr << std::endl;
+    return 0;
 
