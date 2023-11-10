@@ -26,3 +26,4 @@ int main() {
         std::cout << "dynamic_cast: ";
         dogPtr->makeSound();
         dogPtr->fetch();
+} else {
