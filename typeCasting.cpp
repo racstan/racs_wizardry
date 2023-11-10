@@ -31,3 +31,4 @@ int main() {
 }
     delete animalPtr;
     const int constValue = 42;
+    int& nonConstRef = const_cast<int&>(constValue);
