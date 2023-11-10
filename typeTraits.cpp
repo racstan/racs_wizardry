@@ -3,6 +3,7 @@
 
 template <typename T>
 void printTypeInfo() {
+    std::cout << "Type: " << typeid(T).name() << std::endl;
 
 
 
