@@ -21,7 +21,7 @@ void printTypeInfo() {
 }
 
     std::cout << "----------------------------------" << std::endl;
-
+}
 
 
 
