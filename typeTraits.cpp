@@ -28,6 +28,7 @@ int main() {
     printTypeInfo<double>();
     printTypeInfo<char>();
     printTypeInfo<std::string>();
+    printTypeInfo<struct MyStruct>{};
 
 
 
