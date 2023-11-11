@@ -6,6 +6,7 @@ void threadFunction(int threadId) {
 }
 
 int main() {
+    const int numThreads = 3;
 
 
 
