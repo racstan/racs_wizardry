@@ -14,6 +14,7 @@ int main() {
 }
 
     for (int i = 0; i < numThreads; ++i) {
+        threads[i].join();
 
 
 
