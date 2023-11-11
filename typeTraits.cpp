@@ -27,6 +27,7 @@ int main() {
     printTypeInfo<int>();
     printTypeInfo<double>();
     printTypeInfo<char>();
+    printTypeInfo<std::string>();
 
 
 
