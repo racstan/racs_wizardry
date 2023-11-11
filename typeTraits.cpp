@@ -15,6 +15,7 @@ void printTypeInfo() {
         std::cout << "This is not a floating-point type." << std::endl;
 }
     if (std::is_class<T>::value) {
+        std::cout << "This is a class or struct type." << std::endl;
 
 
 
