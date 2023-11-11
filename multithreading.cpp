@@ -13,6 +13,7 @@ int main() {
         threads[i] = std::thread(threadFunction, i);
 }
 
+    for (int i = 0; i < numThreads; ++i) {
 
 
 
