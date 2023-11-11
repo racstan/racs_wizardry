@@ -26,6 +26,7 @@ void printTypeInfo() {
 int main() {
     printTypeInfo<int>();
     printTypeInfo<double>();
+    printTypeInfo<char>();
 
 
 
