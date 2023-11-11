@@ -16,7 +16,7 @@ public:
 }
 };
 void useResource() {
-
+    ResourceManager resource;
 
 
 
