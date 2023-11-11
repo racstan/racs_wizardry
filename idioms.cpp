@@ -15,6 +15,7 @@ public:
         std::cout << "Task performed using the resource." << std::endl;
 }
 };
+void useResource() {
 
 
 
