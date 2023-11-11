@@ -21,7 +21,7 @@ void useResource() {
 }
 
 int main() {
-
+useResource();
 
 
 
