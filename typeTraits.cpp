@@ -18,7 +18,9 @@ void printTypeInfo() {
         std::cout << "This is a class or struct type." << std::endl;
     } else {
         std::cout << "This is not a class or struct type." << std::endl;
+}
 
+    std::cout << "----------------------------------" << std::endl;
 
 
 
