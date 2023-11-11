@@ -12,6 +12,8 @@ void printTypeInfo() {
     if (std::is_floating_point<T>::value) {
         std::cout << "This is a floating-point type." << std::endl;
     } else {
+        std::cout << "This is not a floating-point type." << std::endl;
+
 
 
 
