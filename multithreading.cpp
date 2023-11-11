@@ -7,6 +7,7 @@ void threadFunction(int threadId) {
 
 int main() {
     const int numThreads = 3;
+    std::thread threads[numThreads];
 
 
 
