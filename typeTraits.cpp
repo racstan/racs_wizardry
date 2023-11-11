@@ -24,6 +24,7 @@ void printTypeInfo() {
 }
 
 int main() {
+    printTypeInfo<int>();
 
 
 
