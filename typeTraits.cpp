@@ -13,7 +13,7 @@ void printTypeInfo() {
         std::cout << "This is a floating-point type." << std::endl;
     } else {
         std::cout << "This is not a floating-point type." << std::endl;
-
+}
 
 
 
