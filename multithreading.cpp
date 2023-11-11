@@ -16,7 +16,9 @@ int main() {
     for (int i = 0; i < numThreads; ++i) {
         threads[i].join();
 
+}
 
+    std::cout << "All threads have completed." << std::endl;
 
 
 
