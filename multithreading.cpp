@@ -20,7 +20,8 @@ int main() {
 
     std::cout << "All threads have completed." << std::endl;
 
-
+return 0;
+}
 
 
 
