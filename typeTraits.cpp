@@ -31,6 +31,7 @@ int main() {
     printTypeInfo<struct MyStruct>{};
 
     return 0;
+}
 
 
 
