@@ -17,6 +17,7 @@ public:
 };
 void useResource() {
     ResourceManager resource;
+    resource.performTask();
 
 
 
