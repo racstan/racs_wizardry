@@ -30,6 +30,7 @@ int main() {
     printTypeInfo<std::string>();
     printTypeInfo<struct MyStruct>{};
 
+    return 0;
 
 
 
