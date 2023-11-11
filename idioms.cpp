@@ -13,7 +13,7 @@ public:
 
     void performTask() {
         std::cout << "Task performed using the resource." << std::endl;
-}
+    }
 };
 void useResource() {
     ResourceManager resource;
