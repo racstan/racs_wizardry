@@ -12,6 +12,7 @@ int main() {
     person.add_emails("john@example.com");
 
     std::string serialized_data;
+    person.SerializeToString(&serialized_data);
 
 
 
