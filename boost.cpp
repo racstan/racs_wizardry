@@ -11,6 +11,7 @@ int main() {
 
     boost::split(words, input, boost::is_any_of(" "));
 
+    std::cout << "Words in the string:" << std::endl;
 
 
 
