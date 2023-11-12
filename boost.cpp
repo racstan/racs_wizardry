@@ -4,6 +4,7 @@
 class ResourceManager {
 public:
     ResourceManager() {
+        std::cout << "Resource acquired." << std::endl;
 
 
 
