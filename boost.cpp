@@ -9,6 +9,7 @@ int main() {
     std::string input = "Hello, Boost C++ Libraries!";
     std::vector<std::string> words;
 
+    boost::split(words, input, boost::is_any_of(" "));
 
 
 
