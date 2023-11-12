@@ -16,6 +16,7 @@ try {
         Poco::Net::HTTPResponse response;
         std::istream& responseStream = session.receiveResponse(response);
 
+        std::cout << "Response Status Code: " << response.getStatus() << " " << response.getReason() << std::endl;
 
 
 
