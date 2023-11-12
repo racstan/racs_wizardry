@@ -13,6 +13,7 @@ int main() {
 
     std::cout << "Words in the string:" << std::endl;
     for (const auto& word : words) {
+        std::cout << word << std::endl;
 
 
 
