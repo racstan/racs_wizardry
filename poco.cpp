@@ -7,7 +7,7 @@
 #include <Poco/Exception.h>
 
 int main() {
-
+try {
 
 
 
