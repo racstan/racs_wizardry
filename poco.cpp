@@ -14,6 +14,7 @@ try {
         session.sendRequest(request);
 
         Poco::Net::HTTPResponse response;
+        std::istream& responseStream = session.receiveResponse(response);
 
 
 
