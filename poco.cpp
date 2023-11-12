@@ -20,6 +20,7 @@ try {
 
         Poco::StreamCopier::copyStream(responseStream, std::cout);
     } catch (Poco::Exception& ex) {
+        std::cerr << "Poco Exception: " << ex.displayText() << std::endl;
 
 
 
