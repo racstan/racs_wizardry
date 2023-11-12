@@ -13,6 +13,7 @@ try {
         Poco::Net::HTTPRequest request(Poco::Net::HTTPRequest::HTTP_GET, uri.getPath());
         session.sendRequest(request);
 
+        Poco::Net::HTTPResponse response;
 
 
 
