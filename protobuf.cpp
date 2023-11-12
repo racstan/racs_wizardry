@@ -14,5 +14,7 @@ int main() {
     std::string serialized_data;
     person.SerializeToString(&serialized_data);
 
+    std::cout << "Serialized Data: " << serialized_data << std::endl;
+
 
 
