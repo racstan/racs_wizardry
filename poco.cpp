@@ -9,6 +9,7 @@
 int main() {
 try {
         Poco::URI uri("http://www.example.com");
+        Poco::Net::HTTPClientSession session(uri.getHost(), uri.getPort());
 
 
 
