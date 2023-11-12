@@ -9,6 +9,7 @@ int main() {
     person.set_id(123);
     person.add_emails("john.doe@example.com");
 
+    person.add_emails("john@example.com");
 
 
 
