@@ -19,6 +19,7 @@ try {
         std::cout << "Response Status Code: " << response.getStatus() << " " << response.getReason() << std::endl;
 
         Poco::StreamCopier::copyStream(responseStream, std::cout);
+    } catch (Poco::Exception& ex) {
 
 
 
