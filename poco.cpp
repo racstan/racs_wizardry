@@ -8,6 +8,7 @@
 
 int main() {
 try {
+        Poco::URI uri("http://www.example.com");
 
 
 
