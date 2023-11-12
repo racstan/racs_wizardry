@@ -8,6 +8,7 @@ public:
 }
 
     ~ResourceManager() {
+        std::cout << "Resource released." << std::endl;
 
 
 
