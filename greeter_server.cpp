@@ -32,6 +32,7 @@ void RunServer() {
 }
 
 int main() {
+  RunServer();
 
 
 
