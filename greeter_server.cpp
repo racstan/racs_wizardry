@@ -24,6 +24,7 @@ void RunServer() {
   GreeterServiceImpl service;
   ServerBuilder builder;
   builder.AddListeningPort(server_address, grpc::InsecureServerCredentials());
+  builder.RegisterService(&service);
 
 
 
