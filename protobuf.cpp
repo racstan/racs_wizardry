@@ -27,7 +27,7 @@ int main() {
 
     for (const auto& email : parsed_person.emails()) {
         std::cout << "Email: " << email << std::endl;
-
+}
 
 
 
