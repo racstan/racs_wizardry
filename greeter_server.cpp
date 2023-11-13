@@ -10,6 +10,7 @@ using greeter::Greeter;
 using greeter::HelloRequest;
 using greeter::HelloResponse;
 
+class GreeterServiceImpl final : public Greeter::Service {
 
 
 
