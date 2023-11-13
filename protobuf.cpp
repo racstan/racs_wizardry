@@ -17,5 +17,6 @@ int main() {
     std::cout << "Serialized Data: " << serialized_data << std::endl;
 
     tutorial::Person parsed_person;
+    parsed_person.ParseFromString(serialized_data);
 
 
