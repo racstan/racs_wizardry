@@ -21,3 +21,16 @@ int main() {
 
     std::cout << "Parsed Person:" << std::endl;
 
+    std::cout << "Name: " << parsed_person.name() << std::endl;
+
+
+
+
+
+
+
+
+
+
+
+
