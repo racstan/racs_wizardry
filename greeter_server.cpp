@@ -20,7 +20,6 @@ class GreeterServiceImpl final : public Greeter::Service {
 
 void RunServer() {
   std::string server_address("0.0.0.0:50051");
-
   GreeterServiceImpl service;
   ServerBuilder builder;
   builder.AddListeningPort(server_address, grpc::InsecureServerCredentials());
