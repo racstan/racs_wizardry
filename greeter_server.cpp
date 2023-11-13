@@ -15,7 +15,7 @@ class GreeterServiceImpl final : public Greeter::Service {
     std::string prefix("Hello, ");
     response->set_greeting(prefix + request->name());
     return Status::OK;
-}
+    }
 };
 
 void RunServer() {
