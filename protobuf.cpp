@@ -29,6 +29,7 @@ int main() {
         std::cout << "Email: " << email << std::endl;
 }
 
+    return 0;
 
 
 
