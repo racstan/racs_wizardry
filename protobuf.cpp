@@ -19,4 +19,5 @@ int main() {
     tutorial::Person parsed_person;
     parsed_person.ParseFromString(serialized_data);
 
+    std::cout << "Parsed Person:" << std::endl;
 
