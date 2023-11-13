@@ -13,6 +13,7 @@ using greeter::HelloResponse;
 class GreeterServiceImpl final : public Greeter::Service {
   Status SayHello(ServerContext* context, const HelloRequest* request, HelloResponse* response) override {
     std::string prefix("Hello, ");
+    response->set_greeting(prefix + request->name());
 
 
 
