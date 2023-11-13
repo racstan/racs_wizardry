@@ -28,6 +28,7 @@ void RunServer() {
 
   std::unique_ptr<Server> server(builder.BuildAndStart());
   std::cout << "Server listening on " << server_address << std::endl;
+  server->Wait();
 
 
 
