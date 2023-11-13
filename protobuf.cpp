@@ -26,6 +26,7 @@ int main() {
     std::cout << "ID: " << parsed_person.id() << std::endl;
 
     for (const auto& email : parsed_person.emails()) {
+        std::cout << "Email: " << email << std::endl;
 
 
 
