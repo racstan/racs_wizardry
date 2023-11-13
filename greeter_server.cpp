@@ -11,6 +11,7 @@ using greeter::HelloRequest;
 using greeter::HelloResponse;
 
 class GreeterServiceImpl final : public Greeter::Service {
+  Status SayHello(ServerContext* context, const HelloRequest* request, HelloResponse* response) override {
 
 
 
