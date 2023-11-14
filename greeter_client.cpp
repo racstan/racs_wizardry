@@ -19,6 +19,7 @@ public:
     HelloResponse response;
     ClientContext context;
 
+    Status status = stub_->SayHello(&context, request, &response);
 
 
 
