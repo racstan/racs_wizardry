@@ -10,6 +10,7 @@ using greeter::HelloRequest;
 using greeter::HelloResponse;
 
 class GreeterClient {
+public:
 
 
 
