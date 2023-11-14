@@ -13,6 +13,7 @@ int main() {
         TF_DeleteStatus(status);
         TF_DeleteGraph(graph);
         TF_DeleteSessionOptions(sessionOptions);
+        return 1;
 
 
 
