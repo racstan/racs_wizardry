@@ -38,6 +38,7 @@ int main() {
   std::string user("world");
   std::string reply = greeter.SayHello(user);
   std::cout << "Greeter received: " << reply << std::endl;
+  return 0;
 
 
 
