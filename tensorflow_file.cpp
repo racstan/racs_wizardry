@@ -6,6 +6,7 @@ int main() {
     TF_Status* status = TF_NewStatus();
     TF_SessionOptions* sessionOptions = TF_NewSessionOptions();
     TF_Graph* graph = TF_NewGraph();
+    TF_Session* session = TF_NewSession(graph, sessionOptions, status);
 
 
 
