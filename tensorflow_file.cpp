@@ -14,7 +14,7 @@ int main() {
         TF_DeleteGraph(graph);
         TF_DeleteSessionOptions(sessionOptions);
         return 1;
-
+}
 
 
 
