@@ -24,6 +24,7 @@ public:
     if (status.ok()) {
       return response.greeting();
     } else {
+      return "RPC failed";
 
 
 
