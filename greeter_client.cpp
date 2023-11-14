@@ -13,6 +13,7 @@ class GreeterClient {
 public:
   GreeterClient(std::shared_ptr<Channel> channel) : stub_(Greeter::NewStub(channel)) {}
 
+  std::string SayHello(const std::string& name) {
 
 
 
