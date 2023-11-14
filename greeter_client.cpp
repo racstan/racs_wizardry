@@ -11,6 +11,7 @@ using greeter::HelloResponse;
 
 class GreeterClient {
 public:
+  GreeterClient(std::shared_ptr<Channel> channel) : stub_(Greeter::NewStub(channel)) {}
 
 
 
