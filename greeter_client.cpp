@@ -25,7 +25,7 @@ public:
       return response.greeting();
     } else {
       return "RPC failed";
-
+}
 
 
 
