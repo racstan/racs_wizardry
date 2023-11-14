@@ -26,7 +26,7 @@ public:
     } else {
       return "RPC failed";
 }
-
+}
 
 
 
