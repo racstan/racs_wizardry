@@ -15,6 +15,7 @@ public:
 
   std::string SayHello(const std::string& name) {
     HelloRequest request;
+    request.set_name(name);
 
 
 
