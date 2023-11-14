@@ -33,6 +33,7 @@ private:
   std::unique_ptr<Greeter::Stub> stub_;
 };
 
+int main() {
 
 
 
