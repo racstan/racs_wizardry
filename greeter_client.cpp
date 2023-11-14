@@ -23,6 +23,7 @@ public:
 
     if (status.ok()) {
       return response.greeting();
+    } else {
 
 
 
