@@ -39,7 +39,7 @@ int main() {
   std::string reply = greeter.SayHello(user);
   std::cout << "Greeter received: " << reply << std::endl;
   return 0;
-
+}
 
 
 
