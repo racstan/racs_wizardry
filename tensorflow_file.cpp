@@ -12,6 +12,7 @@ int main() {
         std::cerr << "Error initializing TensorFlow: " << TF_Message(status) << std::endl;
         TF_DeleteStatus(status);
         TF_DeleteGraph(graph);
+        TF_DeleteSessionOptions(sessionOptions);
 
 
 
