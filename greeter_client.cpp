@@ -31,7 +31,7 @@ public:
 
 private:
   std::unique_ptr<Greeter::Stub> stub_;
-
+};
 
 
 
