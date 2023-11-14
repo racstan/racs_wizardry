@@ -7,6 +7,7 @@ using grpc::ClientContext;
 using grpc::Status;
 using greeter::Greeter;
 using greeter::HelloRequest;
+using greeter::HelloResponse;
 
 
 
