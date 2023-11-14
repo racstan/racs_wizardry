@@ -3,6 +3,7 @@
 
 int main() {
 
+    TF_Status* status = TF_NewStatus();
 
 
 
