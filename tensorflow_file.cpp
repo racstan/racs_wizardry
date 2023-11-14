@@ -8,6 +8,7 @@ int main() {
     TF_Graph* graph = TF_NewGraph();
     TF_Session* session = TF_NewSession(graph, sessionOptions, status);
 
+    if (TF_GetCode(status) != TF_OK) {
 
 
 
