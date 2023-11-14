@@ -34,6 +34,7 @@ private:
 };
 
 int main() {
+  GreeterClient greeter(grpc::CreateChannel("localhost:50051", grpc::InsecureChannelCredentials()));
 
 
 
