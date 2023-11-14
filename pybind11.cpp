@@ -4,6 +4,7 @@ int add(int a, int b) {
     return a + b;
 }
 
+PYBIND11_MODULE(example, m) {
 
 
 
