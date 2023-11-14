@@ -11,6 +11,7 @@ int main() {
     if (TF_GetCode(status) != TF_OK) {
         std::cerr << "Error initializing TensorFlow: " << TF_Message(status) << std::endl;
         TF_DeleteStatus(status);
+        TF_DeleteGraph(graph);
 
 
 
