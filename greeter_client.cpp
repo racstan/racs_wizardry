@@ -22,6 +22,7 @@ public:
     Status status = stub_->SayHello(&context, request, &response);
 
     if (status.ok()) {
+      return response.greeting();
 
 
 
