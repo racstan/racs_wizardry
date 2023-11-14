@@ -9,6 +9,7 @@ int main() {
     TF_Session* session = TF_NewSession(graph, sessionOptions, status);
 
     if (TF_GetCode(status) != TF_OK) {
+        std::cerr << "Error initializing TensorFlow: " << TF_Message(status) << std::endl;
 
 
 
