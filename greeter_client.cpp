@@ -17,6 +17,7 @@ public:
     HelloRequest request;
     request.set_name(name);
     HelloResponse response;
+    ClientContext context;
 
 
 
