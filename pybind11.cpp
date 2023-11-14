@@ -6,6 +6,7 @@ int add(int a, int b) {
 
 PYBIND11_MODULE(example, m) {
     m.def("add", &add, "Add two numbers");
+}
 
 
 
