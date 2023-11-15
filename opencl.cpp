@@ -5,6 +5,7 @@
 int main() {
 
     std::vector<cl::Platform> platforms;
+    cl::Platform::get(&platforms);
 
 
 
