@@ -4,6 +4,7 @@
 
 int main() {
 
+    std::vector<cl::Platform> platforms;
 
 
 
