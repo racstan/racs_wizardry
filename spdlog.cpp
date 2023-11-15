@@ -8,6 +8,7 @@ int main() {
 
     console_logger->info("This is an informational message.");
     console_logger->error("This is an error message.");
+    file_logger->info("Logging to a file.");
 
 
 
