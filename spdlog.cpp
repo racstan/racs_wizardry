@@ -15,6 +15,7 @@ int main() {
     console_logger->warn("This is a warning message, but it won't be shown.");
 
     return 0;
+}
 
 
 
