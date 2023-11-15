@@ -33,5 +33,5 @@ int main() {
 nullptr,
 inputs, inputs, 1,
 outputs, outputs, 1,
-
+nullptr, 0, 
 
