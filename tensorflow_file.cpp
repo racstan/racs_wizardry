@@ -17,6 +17,7 @@ int main() {
 }
 
     const int numValues = 2;
+    const int numInputs = 1;
 
 
 
