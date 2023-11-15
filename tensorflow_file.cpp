@@ -48,7 +48,7 @@ status);
     TF_CloseSession(session, status);
     TF_DeleteSession(session, status);
     return 0;
-
+}
 
 
 
