@@ -22,6 +22,7 @@ int main() {
     const int inputSize = numValues * numInputs;
     const int outputSize = numValues * numOutputs;
 
+    TF_Output inputs[numInputs];
 
 
 
