@@ -42,6 +42,7 @@ status);
     } else {
         std::cerr << "Error running TensorFlow session: " << TF_Message(status) << std::endl;
 }
+    TF_DeleteStatus(status);
 
 
 
