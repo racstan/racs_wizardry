@@ -44,6 +44,7 @@ status);
 }
     TF_DeleteStatus(status);
     TF_DeleteGraph(graph);
+    TF_DeleteSessionOptions(sessionOptions);
 
 
 
