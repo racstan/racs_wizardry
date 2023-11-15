@@ -27,6 +27,7 @@ int main() {
     inputs[0].oper = TF_GraphOperationByName(graph, "input");
     inputs[0].index = 0;
     outputs[0].oper = TF_GraphOperationByName(graph, "output");
+    outputs[0].index = 0;
 
 
 
