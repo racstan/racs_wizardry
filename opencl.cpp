@@ -8,6 +8,7 @@ int main() {
     cl::Platform::get(&platforms);
 
     if (platforms.empty()) {
+        std::cerr << "No OpenCL platforms found." << std::endl;
 
 
 
