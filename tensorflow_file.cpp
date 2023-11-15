@@ -40,6 +40,7 @@ status);
     if (TF_GetCode(status) == TF_OK) {
         std::cout << "TensorFlow session run successfully!" << std::endl;
     } else {
+        std::cerr << "Error running TensorFlow session: " << TF_Message(status) << std::endl;
 
 
 
