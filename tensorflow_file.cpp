@@ -36,3 +36,14 @@ outputs, outputs, 1,
 nullptr, 0, 
 nullptr,
 status);
+
+    if (TF_GetCode(status) == TF_OK) {
+
+
+
+
+
+
+
+
+
