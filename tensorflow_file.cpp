@@ -16,6 +16,7 @@ int main() {
         return 1;
 }
 
+    const int numValues = 2;
 
 
 
