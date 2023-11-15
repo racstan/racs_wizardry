@@ -24,6 +24,7 @@ int main() {
 
     TF_Output inputs[numInputs];
     TF_Output outputs[numOutputs];
+    inputs[0].oper = TF_GraphOperationByName(graph, "input");
 
 
 
