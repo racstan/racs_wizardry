@@ -3,6 +3,7 @@
 
 int main() {
 
+    auto console_logger = spdlog::stdout_color_mt("console");
 
 
 
