@@ -10,7 +10,7 @@ int main() {
     if (platforms.empty()) {
         std::cerr << "No OpenCL platforms found." << std::endl;
         return 1;
-
+}
 
 
 
