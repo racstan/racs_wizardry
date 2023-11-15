@@ -10,6 +10,7 @@ int main() {
     console_logger->error("This is an error message.");
     file_logger->info("Logging to a file.");
 
+    console_logger->set_level(spdlog::level::warn);
 
 
 
