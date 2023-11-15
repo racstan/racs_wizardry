@@ -38,6 +38,7 @@ nullptr,
 status);
 
     if (TF_GetCode(status) == TF_OK) {
+        std::cout << "TensorFlow session run successfully!" << std::endl;
 
 
 
