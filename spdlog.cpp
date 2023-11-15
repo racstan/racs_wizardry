@@ -12,6 +12,7 @@ int main() {
 
     console_logger->set_level(spdlog::level::warn);
 
+    console_logger->warn("This is a warning message, but it won't be shown.");
 
 
 
