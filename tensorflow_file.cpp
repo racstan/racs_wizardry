@@ -29,6 +29,7 @@ int main() {
     outputs[0].oper = TF_GraphOperationByName(graph, "output");
     outputs[0].index = 0;
 
+    TF_SessionRun(session,
 
 
 
