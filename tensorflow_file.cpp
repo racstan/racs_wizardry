@@ -19,6 +19,7 @@ int main() {
     const int numValues = 2;
     const int numInputs = 1;
     const int numOutputs = 1;
+    const int inputSize = numValues * numInputs;
 
 
 
