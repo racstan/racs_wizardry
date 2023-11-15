@@ -31,7 +31,7 @@ int main() {
 
     TF_SessionRun(session,
 nullptr,
-
+inputs, inputs, 1,
 
 
 
