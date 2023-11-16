@@ -27,6 +27,7 @@ int main() {
     program.build({device});
 
     const size_t size = 10;
+    std::vector<int> a(size, 1);
 
 
 
