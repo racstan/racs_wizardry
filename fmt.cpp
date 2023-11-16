@@ -13,6 +13,7 @@ int main() {
     std::cout << fmt::sprintf("The answer is %.2f", 42.0) << std::endl;
 
     std::string result = fmt::format("The result is {}", 123);
+    std::cout << "Formatted string: " << result << std::endl;
 
 
 
