@@ -24,6 +24,7 @@ int main() {
  }
  )";
     cl::Program program(context, sourceCode);
+    program.build({device});
 
 
 
