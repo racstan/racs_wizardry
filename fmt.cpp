@@ -16,7 +16,7 @@ int main() {
     std::cout << "Formatted string: " << result << std::endl;
 
     return 0;
-
+}
 
 
 
