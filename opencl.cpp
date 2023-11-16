@@ -41,6 +41,7 @@ int main() {
     kernel.setArg(2, bufferResult);
 
     queue.enqueueNDRangeKernel(kernel, cl::NullRange, cl::NDRange(size));
+    queue.finish();
 
 
 
