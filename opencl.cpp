@@ -42,6 +42,7 @@ int main() {
 
     queue.enqueueNDRangeKernel(kernel, cl::NullRange, cl::NDRange(size));
     queue.finish();
+    queue.enqueueReadBuffer(bufferResult, CL_TRUE, 0, sizeof(int) * size, result.data());
 
 
 
