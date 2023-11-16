@@ -36,6 +36,7 @@ int main() {
     cl::Buffer bufferResult(context, CL_MEM_WRITE_ONLY, sizeof(int) * size);
 
     cl::Kernel kernel(program, "add");
+    kernel.setArg(0, bufferA);
 
 
 
