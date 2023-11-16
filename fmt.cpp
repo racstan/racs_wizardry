@@ -8,6 +8,7 @@ int main() {
     double y = 3.14;
     std::string name = "John";
 
+    std::cout << fmt::format("Values: {}, {}, {}", x, y, name) << std::endl;
 
 
 
