@@ -15,6 +15,7 @@ int main() {
     cl::Device device = devices[0];
     std::cout << "Using device: " << device.getInfo<CL_DEVICE_NAME>() << std::endl;
     cl::Context context({device});
+    cl::CommandQueue queue(context, device);
 
 
 
