@@ -35,6 +35,7 @@ int main() {
     cl::Buffer bufferB(context, CL_MEM_READ_ONLY | CL_MEM_COPY_HOST_PTR, sizeof(int) * size, b.data());
     cl::Buffer bufferResult(context, CL_MEM_WRITE_ONLY, sizeof(int) * size);
 
+    cl::Kernel kernel(program, "add");
 
 
 
