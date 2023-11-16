@@ -47,7 +47,7 @@ int main() {
     std::cout << "Result: ";
     for (int value : result) {
         std::cout << value << " ";
-
+}
 
 
 
