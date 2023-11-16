@@ -21,7 +21,7 @@ int main() {
         __kernel void add(__global int* a, __global int* b, __global int* result) {
             int index = get_global_id(0);
             result[index] = a[index] + b[index];
-
+ }
 
 
 
