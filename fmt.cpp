@@ -15,6 +15,7 @@ int main() {
     std::string result = fmt::format("The result is {}", 123);
     std::cout << "Formatted string: " << result << std::endl;
 
+    return 0;
 
 
 
