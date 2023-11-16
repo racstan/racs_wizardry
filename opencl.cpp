@@ -29,6 +29,7 @@ int main() {
     const size_t size = 10;
     std::vector<int> a(size, 1);
     std::vector<int> b(size, 2);
+    std::vector<int> result(size);
 
 
 
