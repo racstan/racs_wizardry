@@ -18,6 +18,7 @@ int main() {
     cl::CommandQueue queue(context, device);
 
     const char* sourceCode = R"(
+        __kernel void add(__global int* a, __global int* b, __global int* result) {
 
 
 
