@@ -22,7 +22,7 @@ int main() {
             int index = get_global_id(0);
             result[index] = a[index] + b[index];
  }
-
+ )";
 
 
 
