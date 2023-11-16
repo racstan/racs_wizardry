@@ -38,6 +38,7 @@ int main() {
     cl::Kernel kernel(program, "add");
     kernel.setArg(0, bufferA);
     kernel.setArg(1, bufferB);
+    kernel.setArg(2, bufferResult);
 
 
 
