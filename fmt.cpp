@@ -10,6 +10,7 @@ int main() {
 
     std::cout << fmt::format("Values: {}, {}, {}", x, y, name) << std::endl;
 
+    std::cout << fmt::sprintf("The answer is %.2f", 42.0) << std::endl;
 
 
 
