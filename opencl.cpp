@@ -26,6 +26,7 @@ int main() {
     cl::Program program(context, sourceCode);
     program.build({device});
 
+    const size_t size = 10;
 
 
 
