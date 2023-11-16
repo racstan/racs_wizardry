@@ -49,6 +49,7 @@ int main() {
         std::cout << value << " ";
 }
     std::cout << std::endl;
+    return 0;
 
 
 
