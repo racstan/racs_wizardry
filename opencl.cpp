@@ -32,6 +32,7 @@ int main() {
     std::vector<int> result(size);
 
     cl::Buffer bufferA(context, CL_MEM_READ_ONLY | CL_MEM_COPY_HOST_PTR, sizeof(int) * size, a.data());
+    cl::Buffer bufferB(context, CL_MEM_READ_ONLY | CL_MEM_COPY_HOST_PTR, sizeof(int) * size, b.data());
 
 
 
