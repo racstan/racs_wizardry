@@ -17,6 +17,7 @@ int main() {
     cl::Context context({device});
     cl::CommandQueue queue(context, device);
 
+    const char* sourceCode = R"(
 
 
 
