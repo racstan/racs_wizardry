@@ -12,6 +12,9 @@ int main() {
         return 1;
 }
 
+    cl::Device device = devices[0];
+
+
 
 
 
