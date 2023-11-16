@@ -48,6 +48,7 @@ int main() {
     for (int value : result) {
         std::cout << value << " ";
 }
+    std::cout << std::endl;
 
 
 
