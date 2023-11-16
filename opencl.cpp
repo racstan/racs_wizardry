@@ -23,6 +23,7 @@ int main() {
             result[index] = a[index] + b[index];
  }
  )";
+    cl::Program program(context, sourceCode);
 
 
 
