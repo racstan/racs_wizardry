@@ -29,6 +29,7 @@ int main() {
         torch::Tensor y_pred = model(x_train);
         torch::Tensor loss = loss_fn(y_pred, y_train);
 
+        optimizer.zero_grad();
 
 
 
