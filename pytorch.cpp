@@ -33,6 +33,7 @@ int main() {
         loss.backward();
         optimizer.step();
 
+        if (epoch % 10 == 0) {
 
 
 
