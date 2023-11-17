@@ -36,7 +36,7 @@ int main() {
         if (epoch % 10 == 0) {
             std::cout << "Epoch: " << epoch << ", Loss: " << loss.item<float>() << std::endl;
         }
-
+}
 
 
 
