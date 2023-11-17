@@ -41,6 +41,7 @@ int main() {
     torch::Tensor y_pred = model(x_test);
     std::cout << "Prediction for x=1.0: " << y_pred.item<float>() << std::endl;
     return 0;
+}
 
 
 
