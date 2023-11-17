@@ -24,7 +24,7 @@ int main() {
     torch::nn::MSELoss loss_fn;
     torch::optim::SGD optimizer(model.parameters(), /*lr=*/0.01);
 
-
+    for (int epoch = 0; epoch < 100; ++epoch) {
 
 
 
