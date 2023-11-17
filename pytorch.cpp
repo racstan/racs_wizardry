@@ -7,6 +7,7 @@ struct Net : torch::nn::Module {
         linear = register_module("linear", torch::nn::Linear(1, 1));
 }
 
+    torch::Tensor forward(torch::Tensor x) {
 
 
 
