@@ -14,6 +14,7 @@ int main() {
 
     std::cout << "Squared numbers: ";
     ranges::for_each(squared_numbers, [](int x) { std::cout << x << " "; });
+    std::cout << std::endl;
 
 
 
