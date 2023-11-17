@@ -37,6 +37,7 @@ int main() {
             std::cout << "Epoch: " << epoch << ", Loss: " << loss.item<float>() << std::endl;
         }
 }
+    torch::Tensor x_test = torch::tensor({1.0});
 
 
 
