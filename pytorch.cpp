@@ -10,7 +10,7 @@ struct Net : torch::nn::Module {
     torch::Tensor forward(torch::Tensor x) {
         x = linear(x);
         return x;
-
+}
 
 
 
