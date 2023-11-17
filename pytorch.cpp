@@ -30,6 +30,7 @@ int main() {
         torch::Tensor loss = loss_fn(y_pred, y_train);
 
         optimizer.zero_grad();
+        loss.backward();
 
 
 
