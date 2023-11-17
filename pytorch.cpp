@@ -15,6 +15,7 @@ struct Net : torch::nn::Module {
     torch::nn::Linear linear;
 };
 
+int main() {
 
 
 
