@@ -8,6 +8,7 @@ int main() {
     auto even_numbers = numbers | ranges::view::filter([](int x) { return x % 2 == 0; });
     auto squared_numbers = numbers | ranges::view::transform([](int x) { return x * x; });
 
+    std::cout << "Even numbers: ";
 
 
 
