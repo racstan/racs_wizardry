@@ -22,6 +22,7 @@ int main() {
 
     Net model;
     torch::nn::MSELoss loss_fn;
+    torch::optim::SGD optimizer(model.parameters(), /*lr=*/0.01);
 
 
 
