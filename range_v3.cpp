@@ -10,6 +10,7 @@ int main() {
 
     std::cout << "Even numbers: ";
     ranges::for_each(even_numbers, [](int x) { std::cout << x << " "; });
+    std::cout << std::endl;
 
 
 
