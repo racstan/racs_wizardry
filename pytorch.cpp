@@ -20,6 +20,7 @@ int main() {
     torch::Tensor x_train = torch::randn({1000, 1});
     torch::Tensor y_train = 2 * x_train + 1 + 0.1 * torch::randn_like(x_train);
 
+    Net model;
 
 
 
