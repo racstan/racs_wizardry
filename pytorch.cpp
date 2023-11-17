@@ -21,6 +21,7 @@ int main() {
     torch::Tensor y_train = 2 * x_train + 1 + 0.1 * torch::randn_like(x_train);
 
     Net model;
+    torch::nn::MSELoss loss_fn;
 
 
 
