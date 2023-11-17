@@ -27,6 +27,7 @@ int main() {
     for (int epoch = 0; epoch < 100; ++epoch) {
 
         torch::Tensor y_pred = model(x_train);
+        torch::Tensor loss = loss_fn(y_pred, y_train);
 
 
 
