@@ -12,6 +12,7 @@ struct Net : torch::nn::Module {
         return x;
 }
 
+    torch::nn::Linear linear;
 
 
 
