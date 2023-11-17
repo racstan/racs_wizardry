@@ -16,6 +16,7 @@ struct Net : torch::nn::Module {
 };
 
 int main() {
+    torch::manual_seed(1);
 
 
 
