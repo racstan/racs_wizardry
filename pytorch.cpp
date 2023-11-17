@@ -17,6 +17,7 @@ struct Net : torch::nn::Module {
 
 int main() {
     torch::manual_seed(1);
+    torch::Tensor x_train = torch::randn({1000, 1});
 
 
 
