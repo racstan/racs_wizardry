@@ -9,6 +9,7 @@ int main() {
     auto squared_numbers = numbers | ranges::view::transform([](int x) { return x * x; });
 
     std::cout << "Even numbers: ";
+    ranges::for_each(even_numbers, [](int x) { std::cout << x << " "; });
 
 
 
