@@ -12,6 +12,7 @@ int main() {
     ranges::for_each(even_numbers, [](int x) { std::cout << x << " "; });
     std::cout << std::endl;
 
+    std::cout << "Squared numbers: ";
 
 
 
