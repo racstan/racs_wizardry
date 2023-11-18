@@ -25,6 +25,7 @@ fn main() {
         let person3 = Person::Artist {
             name: String::from("Bob"),
             age: 25,
+        };
 
 
 
