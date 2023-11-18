@@ -15,6 +15,7 @@ fn main() {
         Color::Green => println!("It's green!"),
         Color::Blue => println!("It's blue!"),
 
+        enum Person {
 
 
 
