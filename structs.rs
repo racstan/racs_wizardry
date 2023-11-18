@@ -4,3 +4,14 @@ struct Person{
     is_student: bool,
 
 }
+
+fn main() {
+
+
+
+
+
+
+
+
+
