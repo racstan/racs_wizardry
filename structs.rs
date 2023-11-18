@@ -19,6 +19,7 @@ fn main() {
         name: String::from("Bob"),
         age: 30,
         is_student: false,
+    };
 
 
 
