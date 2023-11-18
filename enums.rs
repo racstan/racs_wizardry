@@ -27,6 +27,7 @@ fn main() {
             age: 25,
         };
 
+        match person2 {
 
 
 
