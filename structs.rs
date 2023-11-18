@@ -22,6 +22,7 @@ fn main() {
     };
     person2.age += 1;
     println!("Name: {}", person2.name);
+    println!("Age: {}", person2.age);
 
 
 
