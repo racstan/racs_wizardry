@@ -22,6 +22,7 @@ fn main() {
         }
         let person1 = Person::Engineer;
         let person2 = Person::Scientist(String::from("Alice"), 30);
+        let person3 = Person::Artist {
 
 
 
