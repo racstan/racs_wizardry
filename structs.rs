@@ -20,6 +20,7 @@ fn main() {
         age: 30,
         is_student: false,
     };
+    person2.age += 1;
 
 
 
