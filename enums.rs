@@ -10,6 +10,7 @@ fn main() {
     let my_color2 = Color::Green;
     let my_color3 = Color::Blue;
 
+    match my_color1 {
 
 
 
