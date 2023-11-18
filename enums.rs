@@ -13,6 +13,7 @@ fn main() {
     match my_color1 {
         Color::Red => println!("It's red!"),
         Color::Green => println!("It's green!"),
+        Color::Blue => println!("It's blue!"),
 
 
 
