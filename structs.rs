@@ -6,6 +6,7 @@ struct Person{
 }
 
 fn main() {
+    let person1 = Person {
 
 
 
