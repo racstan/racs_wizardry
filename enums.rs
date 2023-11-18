@@ -24,6 +24,7 @@ fn main() {
         let person2 = Person::Scientist(String::from("Alice"), 30);
         let person3 = Person::Artist {
             name: String::from("Bob"),
+            age: 25,
 
 
 
