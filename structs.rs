@@ -1,1 +1,3 @@
-struct Person{}
+struct Person{
+    name: String,
+}
