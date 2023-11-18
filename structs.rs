@@ -21,6 +21,7 @@ fn main() {
         is_student: false,
     };
     person2.age += 1;
+    println!("Name: {}", person2.name);
 
 
 
