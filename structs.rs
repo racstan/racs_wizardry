@@ -8,6 +8,7 @@ struct Person{
 fn main() {
     let person1 = Person {
         name: String::from("Alice"),
+        age: 25,
 
 
 
