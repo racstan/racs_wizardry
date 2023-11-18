@@ -11,6 +11,7 @@ fn main() {
     let my_color3 = Color::Blue;
 
     match my_color1 {
+        Color::Red => println!("It's red!"),
 
 
 
