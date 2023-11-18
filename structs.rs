@@ -11,6 +11,7 @@ fn main() {
         age: 25,
         is_student: true,
     };
+    println!("Name: {}", person1.name);
 
 
 
