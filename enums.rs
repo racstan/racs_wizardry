@@ -17,6 +17,7 @@ fn main() {
 
         enum Person {
             Engineer,
+            Scientist(String, usize),
 
 
 
