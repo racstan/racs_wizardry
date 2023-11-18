@@ -6,6 +6,7 @@ enum Color {
 
 fn main() {
 
+    let my_color1 = Color::Red;
 
 
 
@@ -28,4 +29,3 @@ fn main() {
 
 
 
-    
