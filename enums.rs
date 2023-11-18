@@ -20,6 +20,7 @@ fn main() {
             Scientist(String, usize),
             Artist { name: String, age: usize },
         }
+        let person1 = Person::Engineer;
 
 
 
