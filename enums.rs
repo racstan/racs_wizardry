@@ -31,6 +31,7 @@ fn main() {
             Person::Engineer => println!("An engineer!"),
             Person::Scientist(name, age) => println!("A scientist named {} aged {}.", name, age),
             Person::Artist { name, age } => println!("An artist named {} aged {}.", name, age),
+        }
 
 
 
