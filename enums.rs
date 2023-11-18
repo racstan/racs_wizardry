@@ -28,6 +28,7 @@ fn main() {
         };
 
         match person2 {
+            Person::Engineer => println!("An engineer!"),
 
 
 
