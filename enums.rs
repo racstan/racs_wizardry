@@ -16,6 +16,7 @@ fn main() {
         Color::Blue => println!("It's blue!"),
 
         enum Person {
+            Engineer,
 
 
 
