@@ -13,6 +13,7 @@ fn main() {
     };
     println!("Name: {}", person1.name);
     println!("Age: {}", person1.age);
+    println!("Is Student: {}", person1.is_student);
 
 
 
