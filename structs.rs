@@ -17,6 +17,7 @@ fn main() {
 
     let mut person2 = Person {
         name: String::from("Bob"),
+        age: 30,
 
 
 
