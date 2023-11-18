@@ -10,6 +10,7 @@ fn main() {
         name: String::from("Alice"),
         age: 25,
         is_student: true,
+    };
 
 
 
