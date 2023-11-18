@@ -15,6 +15,7 @@ fn main() {
     println!("Age: {}", person1.age);
     println!("Is Student: {}", person1.is_student);
 
+    let mut person2 = Person {
 
 
 
