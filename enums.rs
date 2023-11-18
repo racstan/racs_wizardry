@@ -19,6 +19,7 @@ fn main() {
             Engineer,
             Scientist(String, usize),
             Artist { name: String, age: usize },
+        }
 
 
 
