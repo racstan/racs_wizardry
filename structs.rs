@@ -16,6 +16,7 @@ fn main() {
     println!("Is Student: {}", person1.is_student);
 
     let mut person2 = Person {
+        name: String::from("Bob"),
 
 
 
