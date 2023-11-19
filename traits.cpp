@@ -23,5 +23,6 @@ impl Greeter for Robot {
 }
 
 fn main() {
+    let person = Person {
 
 
