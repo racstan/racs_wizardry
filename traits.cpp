@@ -5,3 +5,11 @@ trait Greeter{
 struct Person {
     name: String,
 }
+
+impl Greeter for Person {
+
+
+
+
+
+
