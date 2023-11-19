@@ -1,1 +1,4 @@
-trait Greeter{}
+trait Greeter{
+        fn greet(&self);
+
+}
