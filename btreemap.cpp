@@ -15,7 +15,9 @@ fn main() {
     let key_to_check = 2;
     if let Some(value) = btree_map.get(&key_to_check) {
         println!("Value for key {}: {}", key_to_check, value);
-    } else {        println!("Key {} not found.", key_to_check);
+    } else {       
+         println!("Key {} not found.", key_to_check);
+    }
 
 
 
