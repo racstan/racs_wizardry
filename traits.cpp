@@ -27,5 +27,6 @@ fn main() {
         name: String::from("Alice"),
     };
     let robot = Robot {
+        model: String::from("RoboX"),
 
 
