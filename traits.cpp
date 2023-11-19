@@ -19,7 +19,7 @@ struct Robot {
 impl Greeter for Robot {
     fn greet(&self) {
         println!("Beep boop! I am a {}.", self.model);
-
+}
 
 
 
