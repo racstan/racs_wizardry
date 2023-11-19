@@ -13,6 +13,7 @@ impl Greeter for Person {
 }
 
 struct Robot {
+    model: String,
 
 
 
