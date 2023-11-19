@@ -12,6 +12,7 @@ fn main() {
         println!("Key: {}, Value: {}", key, value);
     }
 
+    let key_to_check = 2;
 
 
 
