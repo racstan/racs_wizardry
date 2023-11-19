@@ -16,6 +16,7 @@ struct Robot {
     model: String,
 }
 
+impl Greeter for Robot {
 
 
 
