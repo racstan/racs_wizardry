@@ -10,6 +10,7 @@ impl Greeter for Person {
     fn greet(&self) {
         println!("Hello, {}!", self.name);
     }
+}
 
 
 
