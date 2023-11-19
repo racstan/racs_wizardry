@@ -8,6 +8,7 @@ fn main() {
     btree_map.insert(4, String::from("Four"));
     btree_map.insert(2, String::from("Two"));
 
+    for (key, value) in &btree_map {
 
 
 
