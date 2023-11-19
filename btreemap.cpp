@@ -18,6 +18,7 @@ fn main() {
     } else {       
          println!("Key {} not found.", key_to_check);
     }
+}
 
 
 
