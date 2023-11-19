@@ -32,4 +32,5 @@ fn main() {
 
     person.greet();
     robot.greet();
+}
 
