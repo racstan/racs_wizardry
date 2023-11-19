@@ -25,5 +25,6 @@ impl Greeter for Robot {
 fn main() {
     let person = Person {
         name: String::from("Alice"),
+    };
 
 
