@@ -3,3 +3,4 @@ trait Greeter{
 
 }
 struct Person {
+    name: String,
