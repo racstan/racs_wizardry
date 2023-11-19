@@ -13,6 +13,7 @@ fn main() {
     }
 
     let key_to_check = 2;
+    if let Some(value) = btree_map.get(&key_to_check) {
 
 
 
