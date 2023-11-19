@@ -7,6 +7,7 @@ struct Person {
 }
 
 impl Greeter for Person {
+    fn greet(&self) {
 
 
 
