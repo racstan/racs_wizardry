@@ -26,5 +26,6 @@ fn main() {
     let person = Person {
         name: String::from("Alice"),
     };
+    let robot = Robot {
 
 
