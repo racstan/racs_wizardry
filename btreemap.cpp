@@ -10,6 +10,7 @@ fn main() {
 
     for (key, value) in &btree_map {
         println!("Key: {}, Value: {}", key, value);
+    }
 
 
 
