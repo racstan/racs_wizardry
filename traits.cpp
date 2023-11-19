@@ -17,6 +17,7 @@ struct Robot {
 }
 
 impl Greeter for Robot {
+    fn greet(&self) {
 
 
 
