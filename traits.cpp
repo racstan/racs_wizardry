@@ -30,4 +30,5 @@ fn main() {
         model: String::from("RoboX"),
     };
 
+    person.greet();
 
