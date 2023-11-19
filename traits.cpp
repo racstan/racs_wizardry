@@ -22,5 +22,6 @@ impl Greeter for Robot {
 }
 }
 
+fn main() {
 
 
