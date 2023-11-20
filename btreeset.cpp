@@ -22,7 +22,8 @@ fn main() {
         println!("Element {} is present in the set.", element_to_check);
               } else {
            println!("Element {} is not present in the set.", element_to_check);
-
+}
+}
 
 
 
