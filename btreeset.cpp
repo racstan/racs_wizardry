@@ -15,6 +15,7 @@ fn main() {
     for element in &btree_set {
            
         println!("Element: {}", element);
+    }
 
 
 
