@@ -17,7 +17,8 @@ fn main() {
         println!("Element: {}", element);
     }
 
-   
+       let element_to_check = 2;
+
 
 
 
