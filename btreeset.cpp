@@ -18,6 +18,7 @@ fn main() {
     }
 
        let element_to_check = 2;
+    if btree_set.contains(&element_to_check) {
 
 
 
