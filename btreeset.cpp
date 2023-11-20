@@ -10,6 +10,7 @@ fn main() {
   
     btree_set.insert(4);
     
+    btree_set.insert(2);
 
 
 
