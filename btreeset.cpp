@@ -13,7 +13,9 @@ fn main() {
     btree_set.insert(2);
    
     for element in &btree_set {
-   
+           
+        println!("Element: {}", element);
+
 
 
 
