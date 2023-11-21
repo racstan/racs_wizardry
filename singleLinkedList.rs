@@ -6,3 +6,4 @@ struct Node<T> {
       
 struct LinkedList<T> {
     head: Option<Box<Node<T>>>,
+}
