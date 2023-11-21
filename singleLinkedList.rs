@@ -17,3 +17,4 @@ impl<T> LinkedList<T> {
         let new_node = Box::new(Node {
             data,
             next: self.head.take(),
+        });
