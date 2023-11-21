@@ -18,3 +18,4 @@ impl<T> LinkedList<T> {
             data,
             next: self.head.take(),
         });
+        self.head = Some(new_node);
