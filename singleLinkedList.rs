@@ -12,3 +12,4 @@ impl<T> LinkedList<T> {
 
     fn new() -> Self {
         LinkedList { head: None }
+    }
