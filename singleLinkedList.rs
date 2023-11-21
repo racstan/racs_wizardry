@@ -28,3 +28,4 @@ impl<T> LinkedList<T> {
         }
     }
 }
+fn main() {
