@@ -27,3 +27,4 @@ impl<T> LinkedList<T> {
             current = &node.next;
         }
     }
+}
