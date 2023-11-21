@@ -13,3 +13,4 @@ impl<T> LinkedList<T> {
     fn new() -> Self {
         LinkedList { head: None }
     }
+    fn push(&mut self, data: T) {
