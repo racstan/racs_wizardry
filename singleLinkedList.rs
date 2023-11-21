@@ -25,3 +25,4 @@ impl<T> LinkedList<T> {
         while let Some(node) = current {
             println!("{}", node.data);
             current = &node.next;
+        }
