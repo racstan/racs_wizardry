@@ -7,3 +7,5 @@ struct Node<T> {
 struct LinkedList<T> {
     head: Option<Box<Node<T>>>,
 }
+
+impl<T> LinkedList<T> {
