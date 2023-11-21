@@ -14,3 +14,4 @@ impl<T> LinkedList<T> {
         LinkedList { head: None }
     }
     fn push(&mut self, data: T) {
+        let new_node = Box::new(Node {
