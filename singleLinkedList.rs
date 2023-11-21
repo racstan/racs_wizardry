@@ -4,3 +4,4 @@ struct Node<T> {
     next: Option<Box<Node<T>>>,
 }
       
+struct LinkedList<T> {
