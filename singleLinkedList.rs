@@ -26,3 +26,4 @@ impl<T> LinkedList<T> {
             println!("{}", node.data);
             current = &node.next;
         }
+    }
