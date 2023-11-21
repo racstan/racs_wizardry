@@ -19,3 +19,4 @@ impl<T> LinkedList<T> {
             next: self.head.take(),
         });
         self.head = Some(new_node);
+    }
