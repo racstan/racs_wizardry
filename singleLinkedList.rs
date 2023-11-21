@@ -23,3 +23,4 @@ impl<T> LinkedList<T> {
     fn display(&self) {
         let mut current = &self.head;
         while let Some(node) = current {
+            println!("{}", node.data);
