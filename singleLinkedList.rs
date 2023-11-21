@@ -20,3 +20,4 @@ impl<T> LinkedList<T> {
         });
         self.head = Some(new_node);
     }
+    fn display(&self) {
