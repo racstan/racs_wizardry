@@ -16,3 +16,4 @@ impl<T> LinkedList<T> {
     fn push(&mut self, data: T) {
         let new_node = Box::new(Node {
             data,
+            next: self.head.take(),
