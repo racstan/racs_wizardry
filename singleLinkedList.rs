@@ -9,3 +9,5 @@ struct LinkedList<T> {
 }
 
 impl<T> LinkedList<T> {
+
+    fn new() -> Self {
