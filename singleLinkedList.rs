@@ -34,4 +34,5 @@ fn main() {
                   
     list.push(2);
 
-          
+    list.push(1);
+   
