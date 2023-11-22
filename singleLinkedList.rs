@@ -30,4 +30,4 @@ impl<T> LinkedList<T> {
 }
 fn main() {
     let mut list = LinkedList::new();
-                   
+                    
