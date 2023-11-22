@@ -32,5 +32,6 @@ fn main() {
     let mut list = LinkedList::new();
     list.push(3);
                   
-  
+    list.push(2);
+
           
