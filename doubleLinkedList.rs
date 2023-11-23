@@ -16,3 +16,5 @@ impl<T> DoublyLinkedList<T> {
             tail: None,
         }
     }
+
+    fn push_back(&mut self, data: T) {
