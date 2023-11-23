@@ -37,3 +37,4 @@ impl<T> DoublyLinkedList<T> {
             println!("{}", node.data);
             current = &node.next;
         }
+    }
