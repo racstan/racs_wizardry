@@ -12,3 +12,4 @@ struct DoublyLinkedList<T> {
 impl<T> DoublyLinkedList<T> {
     fn new() -> Self {
         DoublyLinkedList {
+            head: None,
