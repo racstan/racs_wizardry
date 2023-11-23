@@ -1,2 +1,2 @@
 struct Node<T> {
-    data: T,
+    data: T, 
