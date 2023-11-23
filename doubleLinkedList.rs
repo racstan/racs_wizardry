@@ -5,3 +5,4 @@ struct Node<T> {
 }
 
 struct DoublyLinkedList<T> {
+    head: Option<Box<Node<T>>>,
