@@ -15,3 +15,4 @@ impl<T> DoublyLinkedList<T> {
             head: None,
             tail: None,
         }
+    }
