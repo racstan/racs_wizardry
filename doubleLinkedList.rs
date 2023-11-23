@@ -25,3 +25,4 @@ impl<T> DoublyLinkedList<T> {
         });
         if let Some(mut tail_node) = self.tail.take() {
             tail_node.next = Some(new_node.clone());
+            self.tail = Some(tail_node);
