@@ -31,3 +31,4 @@ impl<T> DoublyLinkedList<T> {
             self.tail = Some(new_node);
         }
     }
+    fn display_forward(&self) {
