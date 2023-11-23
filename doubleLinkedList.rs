@@ -13,3 +13,4 @@ impl<T> DoublyLinkedList<T> {
     fn new() -> Self {
         DoublyLinkedList {
             head: None,
+            tail: None,
