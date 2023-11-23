@@ -42,3 +42,4 @@ impl<T> DoublyLinkedList<T> {
         let mut current = &self.tail;
         while let Some(node) = current {
             println!("{}", node.data);
+            current = &node.prev;
