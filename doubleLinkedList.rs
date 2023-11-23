@@ -40,3 +40,4 @@ impl<T> DoublyLinkedList<T> {
     }
     fn display_reverse(&self) {
         let mut current = &self.tail;
+        while let Some(node) = current {
