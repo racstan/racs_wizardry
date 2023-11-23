@@ -30,3 +30,4 @@ impl<T> DoublyLinkedList<T> {
             self.head = Some(new_node.clone());
             self.tail = Some(new_node);
         }
+    }
