@@ -36,3 +36,4 @@ impl<T> DoublyLinkedList<T> {
         while let Some(node) = current {
             println!("{}", node.data);
             current = &node.next;
+        }
