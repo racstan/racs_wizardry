@@ -48,3 +48,4 @@ impl<T> DoublyLinkedList<T> {
 }
 fn main() {
     let mut list = DoublyLinkedList::new();
+    list.push_back(1);
