@@ -22,3 +22,4 @@ impl<T> DoublyLinkedList<T> {
             data,
             next: None,
             prev: self.tail.take(),
+        });
