@@ -33,3 +33,4 @@ impl<T> DoublyLinkedList<T> {
     }
     fn display_forward(&self) {
         let mut current = &self.head;
+        while let Some(node) = current {
