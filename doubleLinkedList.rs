@@ -8,3 +8,5 @@ struct DoublyLinkedList<T> {
     head: Option<Box<Node<T>>>,
     tail: Option<Box<Node<T>>>,
 }
+
+impl<T> DoublyLinkedList<T> {
