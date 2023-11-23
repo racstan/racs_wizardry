@@ -21,3 +21,4 @@ impl<T> DoublyLinkedList<T> {
         let new_node = Box::new(Node {
             data,
             next: None,
+            prev: self.tail.take(),
