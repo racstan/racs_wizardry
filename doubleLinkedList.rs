@@ -14,3 +14,4 @@ impl<T> DoublyLinkedList<T> {
         DoublyLinkedList {
             head: None,
             tail: None,
+        }
