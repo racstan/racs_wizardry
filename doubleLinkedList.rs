@@ -23,3 +23,4 @@ impl<T> DoublyLinkedList<T> {
             next: None,
             prev: self.tail.take(),
         });
+        if let Some(mut tail_node) = self.tail.take() {
