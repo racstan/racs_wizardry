@@ -45,3 +45,4 @@ impl<T> DoublyLinkedList<T> {
             current = &node.prev;
         }
     }
+}
