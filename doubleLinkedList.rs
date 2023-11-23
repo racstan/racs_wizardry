@@ -27,3 +27,4 @@ impl<T> DoublyLinkedList<T> {
             tail_node.next = Some(new_node.clone());
             self.tail = Some(tail_node);
         } else {
+            self.head = Some(new_node.clone());
