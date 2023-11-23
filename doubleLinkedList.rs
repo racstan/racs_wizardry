@@ -20,3 +20,4 @@ impl<T> DoublyLinkedList<T> {
     fn push_back(&mut self, data: T) {
         let new_node = Box::new(Node {
             data,
+            next: None,
