@@ -46,3 +46,4 @@ impl<T> DoublyLinkedList<T> {
         }
     }
 }
+fn main() {
