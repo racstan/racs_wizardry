@@ -38,3 +38,4 @@ impl<T> DoublyLinkedList<T> {
             current = &node.next;
         }
     }
+    fn display_reverse(&self) {
