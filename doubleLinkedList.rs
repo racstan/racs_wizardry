@@ -53,4 +53,4 @@ fn main() {
     list.push_back(3);
                  
     println!("Forward Order:");
-         
+          
