@@ -55,4 +55,4 @@ fn main() {
     println!("Forward Order:");
        
     list.display_forward();
-   
+    
