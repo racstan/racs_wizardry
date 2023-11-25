@@ -24,3 +24,4 @@ fn main() {
         thread::spawn(move || {
             read_data(shared_data_clone);
         });
+    }
