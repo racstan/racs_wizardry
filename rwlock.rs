@@ -6,3 +6,4 @@ struct SharedData {
 }
 fn read_data(shared_data: Arc<SharedData>) {
     let reader = shared_data.rw_lock.read().unwrap();
+    println!("Reader {}: Reading data: {:?}", thread::current().id(), &*reader);
