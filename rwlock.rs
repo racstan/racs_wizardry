@@ -29,3 +29,4 @@ fn main() {
         for i in 0..5 {
             write_data(Arc::clone(&shared_data), i);
             thread::sleep(std::time::Duration::from_secs(1));
+        }
