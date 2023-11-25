@@ -18,3 +18,4 @@ fn main() {
     let shared_data = Arc::new(SharedData {
         data: Vec::new(),
         rw_lock: RwLock::new(Vec::new()),
+    });
