@@ -23,3 +23,4 @@ fn main() {
         let shared_data_clone = Arc::clone(&shared_data);
         thread::spawn(move || {
             read_data(shared_data_clone);
+        });
