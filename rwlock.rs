@@ -12,3 +12,4 @@ fn write_data(shared_data: Arc<SharedData>, new_value: i32) {
     let mut writer = shared_data.rw_lock.write().unwrap();
 
     writer.push(new_value);
+    println!("Writer {}: Writing data: {:?}", thread::current().id(), &*writer);
