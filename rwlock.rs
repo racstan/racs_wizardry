@@ -8,3 +8,4 @@ fn read_data(shared_data: Arc<SharedData>) {
     let reader = shared_data.rw_lock.read().unwrap();
     println!("Reader {}: Reading data: {:?}", thread::current().id(), &*reader);
 }
+fn write_data(shared_data: Arc<SharedData>, new_value: i32) {
