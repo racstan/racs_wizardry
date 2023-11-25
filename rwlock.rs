@@ -16,3 +16,4 @@ fn write_data(shared_data: Arc<SharedData>, new_value: i32) {
 }
 fn main() {
     let shared_data = Arc::new(SharedData {
+        data: Vec::new(),
