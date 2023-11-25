@@ -26,3 +26,4 @@ fn main() {
         });
     }
     thread::spawn(move || {
+        for i in 0..5 {
