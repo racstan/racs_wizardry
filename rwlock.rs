@@ -27,3 +27,4 @@ fn main() {
     }
     thread::spawn(move || {
         for i in 0..5 {
+            write_data(Arc::clone(&shared_data), i);
