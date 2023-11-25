@@ -15,3 +15,4 @@ fn write_data(shared_data: Arc<SharedData>, new_value: i32) {
     println!("Writer {}: Writing data: {:?}", thread::current().id(), &*writer);
 }
 fn main() {
+    let shared_data = Arc::new(SharedData {
