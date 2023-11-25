@@ -19,3 +19,4 @@ fn main() {
         data: Vec::new(),
         rw_lock: RwLock::new(Vec::new()),
     });
+    for i in 0..3 {
