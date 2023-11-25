@@ -20,3 +20,4 @@ fn main() {
         rw_lock: RwLock::new(Vec::new()),
     });
     for i in 0..3 {
+        let shared_data_clone = Arc::clone(&shared_data);
