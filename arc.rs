@@ -20,4 +20,5 @@ fn main() {
         }
     });
 
-    let handle2 = thread::spawn(move || {
+        let handle2 = thread::spawn(move || {
+            for _ in 0..5 {
