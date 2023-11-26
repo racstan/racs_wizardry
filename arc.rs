@@ -10,4 +10,4 @@ fn increment_counter(shared_data: Arc<Mutex<u32>>, thread_id: u32) {
     println!("Thread {}: Counter: {}", thread_id, *counter);
 }
 fn main() {
- 
+    let shared_data = Arc::new(Mutex::new(0));
