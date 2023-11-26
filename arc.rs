@@ -9,7 +9,7 @@ fn increment_counter(shared_data: Arc<Mutex<u32>>, thread_id: u32) {
     *counter += 1;
     println!("Thread {}: Counter: {}", thread_id, *counter);
 }  
-fn main() {
+fn main() { 
     let shared_data = Arc::new(Mutex::new(0));
     let thread1_data = Arc::clone(&shared_data);
     let thread2_data = Arc::clone(&shared_data);
