@@ -4,4 +4,4 @@ use std::thread;
 struct SharedData {
     counter: Arc<Mutex<u32>>,
 }
- 
+  
