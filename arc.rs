@@ -19,3 +19,5 @@ fn main() {
             thread::sleep(std::time::Duration::from_secs(1));
         }
     });
+
+    let handle2 = thread::spawn(move || {
