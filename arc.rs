@@ -27,3 +27,4 @@ fn main() {
             }
         });
         handle1.join().unwrap();
+        handle2.join().unwrap();
