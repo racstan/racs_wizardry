@@ -19,7 +19,7 @@ fn main() {
             thread::sleep(std::time::Duration::from_secs(1));
         }
     }); 
-  
+   
         let handle2 = thread::spawn(move || {
             for _ in 0..5 {
                 increment_counter(thread2_data.clone(), 2);
