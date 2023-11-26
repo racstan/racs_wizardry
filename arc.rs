@@ -14,3 +14,4 @@ fn main() {
     let thread1_data = Arc::clone(&shared_data);
     let thread2_data = Arc::clone(&shared_data);
     let handle1 = thread::spawn(move || {
+        for _ in 0..5 {
