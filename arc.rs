@@ -25,3 +25,4 @@ fn main() {
                 increment_counter(thread2_data.clone(), 2);
                 thread::sleep(std::time::Duration::from_secs(1));
             }
+        });
