@@ -8,4 +8,4 @@ fn increment_counter(shared_data: Arc<Mutex<u32>>, thread_id: u32) {
     let mut counter = shared_data.lock().unwrap();
     *counter += 1;
     println!("Thread {}: Counter: {}", thread_id, *counter);
-    
+     
