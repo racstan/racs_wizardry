@@ -17,3 +17,4 @@ fn main() {
         for _ in 0..5 {
             increment_counter(thread1_data.clone(), 1);
             thread::sleep(std::time::Duration::from_secs(1));
+        }
