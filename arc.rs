@@ -18,3 +18,4 @@ fn main() {
             increment_counter(thread1_data.clone(), 1);
             thread::sleep(std::time::Duration::from_secs(1));
         }
+    });
