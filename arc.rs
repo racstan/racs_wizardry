@@ -26,3 +26,4 @@ fn main() {
                 thread::sleep(std::time::Duration::from_secs(1));
             }
         });
+        handle1.join().unwrap();
