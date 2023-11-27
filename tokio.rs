@@ -4,7 +4,7 @@ async fn async_task(id: u32) {
     sleep(Duration::from_secs(2)).await; 
     println!("Task {} completed", id); 
 }
-async fn main() {
+async fn main() { 
     let task1 = async_task(1);
     let task2 = async_task(2);
     let task3 = async_task(3);
