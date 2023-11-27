@@ -11,3 +11,4 @@ async fn main() {
 
     tokio::try_join!(task1, task2, task3).expect("Failed to join tasks");
     println!("All tasks completed");
+}
