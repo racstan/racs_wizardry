@@ -7,3 +7,4 @@ async fn async_task(id: u32) {
 async fn main() {
     let task1 = async_task(1);
     let task2 = async_task(2);
+    let task3 = async_task(3);
