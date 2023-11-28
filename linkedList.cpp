@@ -19,3 +19,4 @@ public:
 	void insertAtBeginning(int value) {
 		Node* newNode = new Node(value);
 		if (head == nullptr) {
+			head = newNode;
