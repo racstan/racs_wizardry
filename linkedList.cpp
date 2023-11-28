@@ -22,3 +22,4 @@ public:
 			head = newNode;
 			return;
 		}
+		newNode->next = head;
