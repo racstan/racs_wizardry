@@ -46,3 +46,4 @@ public:
 		if (head->data == value) {
 			Node* temp = head;
 			head = head->next;
+			delete temp;
