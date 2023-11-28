@@ -15,3 +15,4 @@ private:
 public:
 	LinkedList() {
 		head = nullptr;
+	}
