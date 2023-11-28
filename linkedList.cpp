@@ -44,3 +44,4 @@ public:
 			return;
 		}
 		if (head->data == value) {
+			Node* temp = head;
