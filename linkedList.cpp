@@ -20,3 +20,4 @@ public:
 		Node* newNode = new Node(value);
 		if (head == nullptr) {
 			head = newNode;
+			return;
