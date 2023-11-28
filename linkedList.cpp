@@ -25,3 +25,4 @@ public:
 		newNode->next = head;
 		head = newNode;
 	}
+	void insertAtEnd(int value) {
