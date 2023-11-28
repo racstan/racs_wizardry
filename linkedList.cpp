@@ -32,3 +32,4 @@ public:
 			head = newNode;
 			return;
 		}
+		while (current->next!= nullptr) {
