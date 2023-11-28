@@ -36,3 +36,4 @@ public:
 			current = current->next;
 		}
 		current->next = newNode;
+	}
