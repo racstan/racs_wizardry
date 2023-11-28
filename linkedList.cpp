@@ -40,3 +40,4 @@ public:
 	void deleteValue(int value) {
 		Node* newNode = new Node(value);
 		if (head == nullptr) {
+			cout << "No List created";
