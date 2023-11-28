@@ -37,3 +37,4 @@ public:
 		}
 		current->next = newNode;
 	}
+	void deleteValue(int value) {
