@@ -30,3 +30,4 @@ public:
 		Node* current = head;
 		if (head == nullptr) {
 			head = newNode;
+			return;
