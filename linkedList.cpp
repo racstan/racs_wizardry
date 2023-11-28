@@ -35,3 +35,4 @@ public:
 		while (current->next!= nullptr) {
 			current = current->next;
 		}
+		current->next = newNode;
