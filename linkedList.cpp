@@ -42,3 +42,4 @@ public:
 		if (head == nullptr) {
 			cout << "No List created";
 			return;
+		}
