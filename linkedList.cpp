@@ -16,3 +16,4 @@ public:
 	LinkedList() {
 		head = nullptr;
 	}
+	void insertAtBeginning(int value) {
