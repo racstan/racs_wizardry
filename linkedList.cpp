@@ -14,3 +14,4 @@ private:
 	Node* head;
 public:
 	LinkedList() {
+		head = nullptr;
