@@ -26,3 +26,4 @@ public:
 		head = newNode;
 	}
 	void insertAtEnd(int value) {
+		Node* newNode = new Node(value);
