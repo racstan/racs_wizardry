@@ -10,3 +10,4 @@ public:
 	}
 };
 class LinkedList {
+private:
