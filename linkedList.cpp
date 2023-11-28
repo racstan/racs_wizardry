@@ -29,3 +29,4 @@ public:
 		Node* newNode = new Node(value);
 		Node* current = head;
 		if (head == nullptr) {
+			head = newNode;
