@@ -43,3 +43,4 @@ public:
 			cout << "No List created";
 			return;
 		}
+		if (head->data == value) {
