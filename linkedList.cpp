@@ -48,3 +48,4 @@ public:
 			head = head->next;
 			delete temp;
 			return;
+		}
