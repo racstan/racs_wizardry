@@ -66,3 +66,4 @@ public:
 		while (current->next != nullptr) {
 			cout << current->data << " ";
 			current = current->next;
+		}
