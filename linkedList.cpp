@@ -74,3 +74,4 @@ public:
 			return false;
 		}
 		if (head->data == value) {
+			return true;
