@@ -64,3 +64,4 @@ public:
 	void display() {
 		Node* current = head;
 		while (current->next != nullptr) {
+			cout << current->data << " ";
