@@ -72,3 +72,4 @@ public:
 		if (head == nullptr) {
 			cout << "List not created" << endl;
 			return false;
+		}
