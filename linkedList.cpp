@@ -67,3 +67,4 @@ public:
 			cout << current->data << " ";
 			current = current->next;
 		}
+	}
