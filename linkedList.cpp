@@ -77,6 +77,7 @@ public:
 			return true;
 }
 		Node* current = head;
+		while (current->next != nullptr && current->next->data != value) {
 
 
 
