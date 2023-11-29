@@ -88,4 +88,5 @@ public:
 			cout << "Element found";
 			return true;
 		}
+	}
 
