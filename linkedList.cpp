@@ -92,4 +92,5 @@ public:
 };
 int main() {
 	LinkedList myList;
+	myList.insertAtBeginning(20);
 
