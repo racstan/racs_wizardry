@@ -83,5 +83,6 @@ public:
 		if (current->next == nullptr) {
 			cout << "Element not found";
 			return false;
+		}
 
 
