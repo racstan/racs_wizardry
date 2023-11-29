@@ -85,4 +85,5 @@ public:
 			return false;
 		}
 		if (current->next->data == value) {
+			cout << "Element found";
 
