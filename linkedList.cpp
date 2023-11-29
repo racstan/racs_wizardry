@@ -68,3 +68,4 @@ public:
 			current = current->next;
 		}
 	}
+	bool search(int value) {
