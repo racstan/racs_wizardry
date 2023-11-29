@@ -65,3 +65,4 @@ public:
 		Node* current = head;
 		while (current->next != nullptr) {
 			cout << current->data << " ";
+			current = current->next;
