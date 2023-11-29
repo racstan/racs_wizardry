@@ -69,3 +69,4 @@ public:
 		}
 	}
 	bool search(int value) {
+		if (head == nullptr) {
