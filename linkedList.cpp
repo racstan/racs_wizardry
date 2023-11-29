@@ -76,3 +76,9 @@ public:
 		if (head->data == value) {
 			return true;
 }
+		Node* current = head;
+
+
+
+
+
