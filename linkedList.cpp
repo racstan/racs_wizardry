@@ -61,3 +61,4 @@ public:
 		current->next = current->next->next;
 		delete temp;
 	}
+	void display() {
