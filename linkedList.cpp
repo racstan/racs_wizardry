@@ -75,3 +75,4 @@ public:
 		}
 		if (head->data == value) {
 			return true;
+}
