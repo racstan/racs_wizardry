@@ -53,3 +53,4 @@ public:
 		while (current->next != nullptr && current->next->data != value) {
 			current = current->next;
 		}
+		if (current->next == nullptr) {
