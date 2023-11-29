@@ -71,3 +71,4 @@ public:
 	bool search(int value) {
 		if (head == nullptr) {
 			cout << "List not created" << endl;
+			return false;
