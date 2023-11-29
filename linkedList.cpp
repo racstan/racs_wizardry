@@ -73,3 +73,4 @@ public:
 			cout << "List not created" << endl;
 			return false;
 		}
+		if (head->data == value) {
