@@ -95,4 +95,5 @@ int main() {
 	myList.insertAtBeginning(20);
 	myList.insertAtBeginning(200);
 	myList.insertAtBeginning(2000);
+	myList.insertAtEnd(69);
 
