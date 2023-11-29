@@ -55,3 +55,4 @@ public:
 		}
 		if (current->next == nullptr) {
 			cout << "Element not found" << endl;
+			return;
