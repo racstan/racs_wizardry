@@ -57,3 +57,4 @@ public:
 			cout << "Element not found" << endl;
 			return;
 		}
+		Node* temp = current->next;
