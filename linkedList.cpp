@@ -97,4 +97,5 @@ int main() {
 	myList.insertAtBeginning(2000);
 	myList.insertAtEnd(69);
 	myList.display();
+}
 
