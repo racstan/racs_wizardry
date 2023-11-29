@@ -62,3 +62,4 @@ public:
 		delete temp;
 	}
 	void display() {
+		Node* current = head;
