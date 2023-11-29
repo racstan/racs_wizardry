@@ -84,5 +84,5 @@ public:
 			cout << "Element not found";
 			return false;
 		}
-
+		if (current->next->data == value) {
 
