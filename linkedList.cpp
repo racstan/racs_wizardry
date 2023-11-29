@@ -91,4 +91,5 @@ public:
 	}
 };
 int main() {
+	LinkedList myList;
 
