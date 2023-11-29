@@ -50,3 +50,4 @@ public:
 			return;
 		}
 		Node* current = head;
+		while (current->next != nullptr && current->next->data != value) {
