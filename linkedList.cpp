@@ -58,3 +58,4 @@ public:
 			return;
 		}
 		Node* temp = current->next;
+		current->next = current->next->next;
