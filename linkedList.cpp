@@ -60,3 +60,4 @@ public:
 		Node* temp = current->next;
 		current->next = current->next->next;
 		delete temp;
+	}
