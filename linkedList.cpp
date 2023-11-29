@@ -94,4 +94,5 @@ int main() {
 	LinkedList myList;
 	myList.insertAtBeginning(20);
 	myList.insertAtBeginning(200);
+	myList.insertAtBeginning(2000);
 
