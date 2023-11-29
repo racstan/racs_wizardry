@@ -49,3 +49,4 @@ public:
 			delete temp;
 			return;
 		}
+		Node* current = head;
