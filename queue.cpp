@@ -33,3 +33,4 @@ public:
 		}
 		if (front == rear) {
 			delete front;
+			front = rear = nullptr;	
