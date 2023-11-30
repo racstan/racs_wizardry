@@ -31,3 +31,4 @@ public:
 			cout << "Queue is empty" << endl;
 			return;
 		}
+		if (front == rear) {
