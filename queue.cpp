@@ -16,3 +16,4 @@ public:
 	Queue() {
 		front = nullptr;
 		rear = nullptr;
+	}
