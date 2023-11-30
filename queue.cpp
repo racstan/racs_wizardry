@@ -22,3 +22,4 @@ public:
 		if (front == nullptr) {
 			front = rear = newNode;
 			return;
+		}
