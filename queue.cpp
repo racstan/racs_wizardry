@@ -19,3 +19,4 @@ public:
 	}
 	void enqueue(int value) {
 		Node* newNode = new Node(value);
+		if (front == nullptr) {
