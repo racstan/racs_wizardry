@@ -24,3 +24,4 @@ public:
 			return;
 		}
 		rear->next = newNode;
+		rear = newNode;
