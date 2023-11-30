@@ -18,3 +18,4 @@ public:
 		rear = nullptr;
 	}
 	void enqueue(int value) {
+		Node* newNode = new Node(value);
