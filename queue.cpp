@@ -47,3 +47,4 @@ public:
 			return;
 		}
 		Node* current = front;
+		while (current!= nullptr) {
