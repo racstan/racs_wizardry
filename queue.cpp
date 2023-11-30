@@ -17,3 +17,4 @@ public:
 		front = nullptr;
 		rear = nullptr;
 	}
+	void enqueue(int value) {
