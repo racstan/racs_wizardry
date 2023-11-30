@@ -25,3 +25,4 @@ public:
 		}
 		rear->next = newNode;
 		rear = newNode;
+	}
