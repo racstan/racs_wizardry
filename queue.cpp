@@ -35,3 +35,4 @@ public:
 			delete front;
 			front = rear = nullptr;	
 		}
+		else {
