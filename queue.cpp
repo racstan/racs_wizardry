@@ -37,3 +37,4 @@ public:
 		}
 		else {
 			Node* temp = front;
+			front = front->next;
