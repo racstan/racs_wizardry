@@ -39,3 +39,4 @@ public:
 			Node* temp = front;
 			front = front->next;
 			delete temp;
+		}
