@@ -11,3 +11,4 @@ public:
 };
 class Queue {
 public:
+	Node* front;
