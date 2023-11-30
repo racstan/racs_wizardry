@@ -27,3 +27,4 @@ public:
 		rear = newNode;
 	}
 	void dequeue() {
+		if (front == nullptr) {
