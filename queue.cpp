@@ -8,3 +8,4 @@ public:
 		this->data = data;
 		this->next = nullptr;
 	}
+};
