@@ -46,3 +46,4 @@ public:
 			cout << "Queue is empty" << endl;
 			return;
 		}
+		Node* current = front;
