@@ -28,3 +28,4 @@ public:
 	}
 	void dequeue() {
 		if (front == nullptr) {
+			cout << "Queue is empty" << endl;
