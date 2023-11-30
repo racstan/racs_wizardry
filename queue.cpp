@@ -13,3 +13,4 @@ class Queue {
 public:
 	Node* front;
 	Node* rear;
+	Queue() {
