@@ -48,3 +48,4 @@ public:
 		}
 		Node* current = front;
 		while (current!= nullptr) {
+			cout << current->data << " ";
