@@ -21,3 +21,4 @@ public:
 		Node* newNode = new Node(value);
 		if (front == nullptr) {
 			front = rear = newNode;
+			return;
