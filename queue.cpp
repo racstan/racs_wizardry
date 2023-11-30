@@ -41,3 +41,4 @@ public:
 			delete temp;
 		}
 	}
+	void display() {
