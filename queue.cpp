@@ -10,3 +10,4 @@ public:
 	}
 };
 class Queue {
+public:
