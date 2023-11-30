@@ -44,3 +44,4 @@ public:
 	void display() {
 		if (front == nullptr) {
 			cout << "Queue is empty" << endl;
+			return;
