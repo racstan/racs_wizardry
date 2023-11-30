@@ -40,3 +40,4 @@ public:
 			front = front->next;
 			delete temp;
 		}
+	}
