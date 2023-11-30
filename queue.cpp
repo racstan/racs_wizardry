@@ -15,3 +15,4 @@ public:
 	Node* rear;
 	Queue() {
 		front = nullptr;
+		rear = nullptr;
