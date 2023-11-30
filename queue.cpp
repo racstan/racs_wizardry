@@ -23,3 +23,4 @@ public:
 			front = rear = newNode;
 			return;
 		}
+		rear->next = newNode;
