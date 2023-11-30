@@ -32,3 +32,4 @@ public:
 			return;
 		}
 		if (front == rear) {
+			delete front;
