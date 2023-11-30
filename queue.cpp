@@ -42,3 +42,4 @@ public:
 		}
 	}
 	void display() {
+		if (front == nullptr) {
