@@ -36,3 +36,4 @@ public:
 			front = rear = nullptr;	
 		}
 		else {
+			Node* temp = front;
