@@ -9,3 +9,4 @@ public:
 		this->next = nullptr;
 	}
 };
+class Queue {
