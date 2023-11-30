@@ -26,3 +26,4 @@ public:
 		rear->next = newNode;
 		rear = newNode;
 	}
+	void dequeue() {
