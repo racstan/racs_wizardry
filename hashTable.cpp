@@ -45,3 +45,4 @@ public:
 			if (current->key == key) {
 				return current->value;
 			}
+			current = current->next;
