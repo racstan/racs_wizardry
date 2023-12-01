@@ -47,3 +47,4 @@ public:
 			}
 			current = current->next;
 		}
+		return -1;
