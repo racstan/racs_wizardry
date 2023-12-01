@@ -30,3 +30,4 @@ public:
 		Node* newNode = new Node(key,value);
 		if (buckets[index] == nullptr) {
 			buckets[index] = newNode;
+		}
