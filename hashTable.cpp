@@ -12,3 +12,4 @@ public:
 		this->value = value;
 		this->next = nullptr;
 	}
+};
