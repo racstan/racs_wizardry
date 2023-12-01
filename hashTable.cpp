@@ -36,3 +36,6 @@ public:
 			buckets[index] = newNode;
 		}
 	}
+
+
+	int get(int key) {
