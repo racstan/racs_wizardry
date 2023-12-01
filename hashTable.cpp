@@ -21,3 +21,4 @@ private:
 		return key % numBuckets;
 	}
 public:
+	HashTable(int numBuckets) {
