@@ -42,3 +42,4 @@ public:
 		int index = hashFunction(key);
 		Node* current = buckets[index];
 		while (current != nullptr) {
+			if (current->key == key) {
