@@ -20,3 +20,4 @@ private:
 	int hashFunction(int key) {
 		return key % numBuckets;
 	}
+public:
