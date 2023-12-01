@@ -44,3 +44,4 @@ public:
 		while (current != nullptr) {
 			if (current->key == key) {
 				return current->value;
+			}
