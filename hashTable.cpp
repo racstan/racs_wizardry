@@ -14,3 +14,4 @@ public:
 	}
 };
 class HashTable {
+private:
