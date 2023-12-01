@@ -40,3 +40,4 @@ public:
 
 	int get(int key) {
 		int index = hashFunction(key);
+		Node* current = buckets[index];
