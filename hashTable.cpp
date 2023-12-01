@@ -15,3 +15,4 @@ public:
 };
 class HashTable {
 private:
+	vector<Node*> buckets;
