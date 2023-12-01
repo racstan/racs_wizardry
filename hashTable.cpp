@@ -5,3 +5,4 @@ class Node {
 public:
 	int key;
 	int value;
+	Node* next;
