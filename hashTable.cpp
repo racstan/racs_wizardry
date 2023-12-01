@@ -26,3 +26,4 @@ public:
 		this->buckets.resize(numBuckets, nullptr);
 	}
 	void insert(int key, int value) {
+		int index = hashFunction(key);
