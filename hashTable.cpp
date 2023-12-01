@@ -46,3 +46,4 @@ public:
 				return current->value;
 			}
 			current = current->next;
+		}
