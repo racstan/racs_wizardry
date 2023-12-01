@@ -32,3 +32,4 @@ public:
 			buckets[index] = newNode;
 		}
 		else {
+			newNode->next = buckets[index];
