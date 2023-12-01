@@ -22,3 +22,4 @@ private:
 	}
 public:
 	HashTable(int numBuckets) {
+		this->numBuckets = numBuckets;
