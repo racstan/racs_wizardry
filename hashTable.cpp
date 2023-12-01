@@ -24,3 +24,4 @@ public:
 	HashTable(int numBuckets) {
 		this->numBuckets = numBuckets;
 		this->buckets.resize(numBuckets, nullptr);
+	}
