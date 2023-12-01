@@ -11,3 +11,4 @@ public:
 		this->key = key;
 		this->value = value;
 		this->next = nullptr;
+	}
