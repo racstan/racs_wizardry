@@ -6,3 +6,5 @@ public:
 	int key;
 	int value;
 	Node* next;
+
+	Node(int key, int value) {
