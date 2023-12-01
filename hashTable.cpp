@@ -8,3 +8,4 @@ public:
 	Node* next;
 
 	Node(int key, int value) {
+		this->key = key;
