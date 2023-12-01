@@ -28,3 +28,4 @@ public:
 	void insert(int key, int value) {
 		int index = hashFunction(key);
 		Node* newNode = new Node(key,value);
+		if (buckets[index] == nullptr) {
