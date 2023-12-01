@@ -43,3 +43,4 @@ public:
 		Node* current = buckets[index];
 		while (current != nullptr) {
 			if (current->key == key) {
+				return current->value;
