@@ -34,3 +34,4 @@ public:
 		else {
 			newNode->next = buckets[index];
 			buckets[index] = newNode;
+		}
