@@ -17,3 +17,4 @@ class HashTable {
 private:
 	vector<Node*> buckets;
 	int numBuckets;
+	int hashFunction(int key) {
