@@ -13,3 +13,4 @@ public:
 		this->next = nullptr;
 	}
 };
+class HashTable {
