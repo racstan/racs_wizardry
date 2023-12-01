@@ -25,3 +25,4 @@ public:
 		this->numBuckets = numBuckets;
 		this->buckets.resize(numBuckets, nullptr);
 	}
+	void insert(int key, int value) {
