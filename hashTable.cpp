@@ -52,7 +52,8 @@ public:
 };
 int main() {
             
-			   
+		HashTable myHashTable(5);
+		   
  
                         
 	  					 
