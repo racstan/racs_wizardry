@@ -55,6 +55,6 @@ int main() {
 		HashTable myHashTable(5);
 		  	myHashTable.insert(5, 12);
  
- 
+  
                         
 	  					 
