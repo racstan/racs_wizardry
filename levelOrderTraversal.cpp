@@ -9,3 +9,4 @@ public:
 	Node(int value): data(value), left(nullptr), right(nullptr){}
 };
 class BinaryTree {
+private:
