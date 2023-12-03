@@ -23,3 +23,4 @@ public:
 		if (value < current->data) {
 			current->left = insertRecursive(current->left, value);
 		}
+		return current;
