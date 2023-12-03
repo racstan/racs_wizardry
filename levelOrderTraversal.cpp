@@ -40,3 +40,4 @@ public:
 			if (current->left != nullptr) {
 				q.push(current->left);
 			}
+			if (current->right != nullptr) {
