@@ -35,3 +35,4 @@ public:
 		cout << "Level Order Traversal";
 		while (!q.empty()) {
 			Node* current = q.front();
+			q.pop();
