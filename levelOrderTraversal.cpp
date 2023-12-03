@@ -31,3 +31,4 @@ public:
 			return;
 		}
 		queue<Node*> q;
+		q.push(root);
