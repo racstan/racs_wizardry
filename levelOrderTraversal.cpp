@@ -21,4 +21,4 @@ public:
 			return new Node(value);
 		}
 		if (value < current->data) {
-			current->left = insertRecursive(current->left, 
+			current->left = insertRecursive(current->left, value);
