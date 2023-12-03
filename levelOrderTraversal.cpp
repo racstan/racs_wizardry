@@ -42,3 +42,4 @@ public:
 			}
 			if (current->right != nullptr) {
 				q.push(current->right);
+			}
