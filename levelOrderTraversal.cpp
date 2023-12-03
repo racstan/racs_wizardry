@@ -17,3 +17,4 @@ public:
 		root = insertRecursive(root, value);
 	}
 	Node* insertRecursive(Node* current, int value) {
+		if (current == nullptr) {
