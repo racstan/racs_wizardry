@@ -37,3 +37,4 @@ public:
 			Node* current = q.front();
 			q.pop();
 			cout << current->data << " ";
+			if (current->left != nullptr) {
