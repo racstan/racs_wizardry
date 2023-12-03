@@ -39,3 +39,4 @@ public:
 			cout << current->data << " ";
 			if (current->left != nullptr) {
 				q.push(current->left);
+			}
