@@ -29,3 +29,4 @@ public:
 		if (root == nullptr) {
 			cout << "Tree is empty" << endl;
 			return;
+		}
