@@ -24,3 +24,4 @@ public:
 			current->left = insertRecursive(current->left, value);
 		}
 		return current;
+	}
