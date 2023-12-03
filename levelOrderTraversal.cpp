@@ -26,4 +26,4 @@ public:
 		return current;
 	}
 	void levelOrderTraversal() {
-s
+		if (root == nullptr) {
