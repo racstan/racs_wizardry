@@ -14,3 +14,4 @@ private:
 public:
 	BinaryTree(): root(nullptr){}
 	void insert(int value) {
+		root = insertRecursive(root, value);
