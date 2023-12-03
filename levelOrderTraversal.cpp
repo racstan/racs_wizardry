@@ -20,3 +20,4 @@ public:
 		if (current == nullptr) {
 			return new Node(value);
 		}
+		if (value < current->data) {
