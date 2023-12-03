@@ -19,3 +19,4 @@ public:
 	Node* insertRecursive(Node* current, int value) {
 		if (current == nullptr) {
 			return new Node(value);
+		}
