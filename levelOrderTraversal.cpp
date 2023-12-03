@@ -16,3 +16,4 @@ public:
 	void insert(int value) {
 		root = insertRecursive(root, value);
 	}
+	Node* insertRecursive(Node* current, int value) {
