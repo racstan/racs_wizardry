@@ -27,3 +27,4 @@ public:
 	}
 	void levelOrderTraversal() {
 		if (root == nullptr) {
+			cout << "Tree is empty" << endl;
