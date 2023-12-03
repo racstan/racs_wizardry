@@ -36,3 +36,4 @@ public:
 		while (!q.empty()) {
 			Node* current = q.front();
 			q.pop();
+			cout << current->data << " ";
