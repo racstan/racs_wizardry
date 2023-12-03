@@ -30,3 +30,4 @@ public:
 			cout << "Tree is empty" << endl;
 			return;
 		}
+		queue<Node*> q;
