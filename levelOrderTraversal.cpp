@@ -13,3 +13,4 @@ private:
 	Node* root;
 public:
 	BinaryTree(): root(nullptr){}
+	void insert(int value) {
