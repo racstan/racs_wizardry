@@ -15,7 +15,7 @@ void selectionSort(int arr[], int size) {
             if (arr[j] < arr[minIndex]) {
                 minIndex = j;
             }
-        }
+        } 
         if (minIndex != i) {
             swap(arr[i], arr[minIndex]);
         }
