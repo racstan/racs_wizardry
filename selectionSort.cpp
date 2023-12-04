@@ -16,3 +16,4 @@ void selectionSort(int arr[], int size) {
                 minIndex = j;
             }
         }
+        if (minIndex != i) {
