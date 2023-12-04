@@ -26,3 +26,5 @@ void get(int arr[], int size) {
         cout << arr[i] << " ";
     }
 }
+
+int main() {
