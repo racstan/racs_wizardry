@@ -28,3 +28,4 @@ void get(int arr[], int size) {
 }
 
 int main() {
+    int arr[5] = { 35,43,23,12,76 };
