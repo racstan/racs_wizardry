@@ -20,7 +20,7 @@ void selectionSort(int arr[], int size) {
             swap(arr[i], arr[minIndex]);
         }
     }
-}
+} 
    
 void get(int arr[], int size) {
     for (int i = 0; i < size; ++i) {
