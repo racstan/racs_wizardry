@@ -20,3 +20,4 @@ void selectionSort(int arr[], int size) {
             swap(arr[i], arr[minIndex]);
         }
     }
+}
