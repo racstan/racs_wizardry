@@ -7,3 +7,4 @@ void swap(int& a, int& b) {
 	b = a;
 }
 
+void selectionSort(int arr[], int size) {
