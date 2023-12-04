@@ -21,3 +21,4 @@ void selectionSort(int arr[], int size) {
         }
     }
 }
+void get(int arr[], int size) {
