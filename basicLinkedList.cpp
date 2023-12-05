@@ -9,7 +9,7 @@ using namespace std;
 int main() {
     Node* head = new Node;
     Node* second = new Node;
-    Node* third = new Node;
+    Node* third = new Node; 
     head->data =0; 
     head->next = second; 
     second->data =4; 
