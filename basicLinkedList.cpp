@@ -20,7 +20,7 @@ int main() {
     Node* current = head;
     while(current!=nullptr){
         cout<<current->data<<endl;
-        current = current->next;
+        current = current->next; 
     } 
     delete head;
     delete second;
