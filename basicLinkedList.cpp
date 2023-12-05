@@ -1,7 +1,7 @@
 #include <iostream>
 #include <array>
 using namespace std;
- 
+  
     struct Node {
         int data;
         Node* next;
