@@ -12,7 +12,7 @@ int main() {
     Node* third = new Node;
     head->data =0;
     head->next = second;
-    second->data =4;
+    second->data =4; 
     second->next =third;
     third->data =7;
     third->next= nullptr;
