@@ -7,7 +7,7 @@ using namespace std;
         Node* next; 
     };      
 int main() {
-    Node* head = new Node;
+    Node* head = new Node; 
     Node* second = new Node; 
     Node* third = new Node; 
     head->data =0; 
