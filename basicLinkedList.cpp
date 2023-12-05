@@ -11,7 +11,7 @@ int main() {
     Node* second = new Node;
     Node* third = new Node;
     head->data =0;
-    head->next = second;
+    head->next = second; 
     second->data =4; 
     second->next =third;
     third->data =7;
