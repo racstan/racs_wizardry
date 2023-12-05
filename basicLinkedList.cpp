@@ -6,7 +6,7 @@ using namespace std;
         int data;
         Node* next;
     };   
-int main(){
+int main() {
     Node* head = new Node;
     Node* second = new Node;
     Node* third = new Node;
