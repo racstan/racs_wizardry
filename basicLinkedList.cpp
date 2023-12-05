@@ -16,7 +16,7 @@ int main(){
     second->next =third;
     third->data =7;
     third->next= nullptr;
-   
+    
     Node* current = head;
     while(current!=nullptr){
         cout<<current->data<<endl;
