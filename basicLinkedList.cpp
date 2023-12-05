@@ -21,7 +21,7 @@ int main(){
     while(current!=nullptr){
         cout<<current->data<<endl;
         current = current->next;
-    }
+    } 
     delete head;
     delete second;
     delete third;
