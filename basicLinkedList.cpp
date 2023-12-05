@@ -10,7 +10,7 @@ int main() {
     Node* head = new Node; 
     Node* second = new Node; 
     Node* third = new Node; 
-    head->data =0; 
+    head->data =0;  
     head->next = second; 
     second->data =4; 
     second->next =third;
