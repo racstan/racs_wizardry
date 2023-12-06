@@ -33,3 +33,4 @@ if [ -n "${PYTHONHOME:-}" ] ; then
     _OLD_VIRTUAL_PYTHONHOME="${PYTHONHOME:-}"
     unset PYTHONHOME
 fi
+if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
