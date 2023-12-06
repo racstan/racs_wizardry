@@ -3,3 +3,4 @@ deactivate () {
         PATH="${_OLD_VIRTUAL_PATH:-}"
         export PATH
         unset _OLD_VIRTUAL_PATH
+    fi
