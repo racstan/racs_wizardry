@@ -32,3 +32,4 @@ export PATH
 if [ -n "${PYTHONHOME:-}" ] ; then
     _OLD_VIRTUAL_PYTHONHOME="${PYTHONHOME:-}"
     unset PYTHONHOME
+fi
