@@ -39,3 +39,4 @@ if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     export PS1
     VIRTUAL_ENV_PROMPT="(fooocus_env) "
     export VIRTUAL_ENV_PROMPT
+fi
