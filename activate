@@ -1,3 +1,4 @@
 deactivate () {
     if [ -n "${_OLD_VIRTUAL_PATH:-}" ] ; then
         PATH="${_OLD_VIRTUAL_PATH:-}"
+        export PATH
