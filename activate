@@ -40,3 +40,4 @@ if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     VIRTUAL_ENV_PROMPT="(fooocus_env) "
     export VIRTUAL_ENV_PROMPT
 fi
+if [ -n "${BASH:-}" -o -n "${ZSH_VERSION:-}" ] ; then
