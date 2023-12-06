@@ -20,3 +20,4 @@ deactivate () {
     unset VIRTUAL_ENV
     unset VIRTUAL_ENV_PROMPT
     if [ ! "${1:-}" = "nondestructive" ] ; then
+        unset -f deactivate
