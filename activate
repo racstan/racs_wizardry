@@ -9,3 +9,4 @@ deactivate () {
         export PYTHONHOME
         unset _OLD_VIRTUAL_PYTHONHOME
     fi
+    if [ -n "${BASH:-}" -o -n "${ZSH_VERSION:-}" ] ; then
