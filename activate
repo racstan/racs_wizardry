@@ -35,3 +35,4 @@ if [ -n "${PYTHONHOME:-}" ] ; then
 fi
 if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     _OLD_VIRTUAL_PS1="${PS1:-}"
+    PS1="(fooocus_env) ${PS1:-}"
