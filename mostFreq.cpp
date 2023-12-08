@@ -24,7 +24,7 @@ void mostFreq(int arr[],int size, int k){
             max = count[i];
             tempElement = arr[i];
         }
-    }
+    } 
     if(max>0){
     cout<<"The element with: "<<(max+1)<<" frequency is: "<<tempElement<<endl;
     }
