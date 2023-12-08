@@ -44,7 +44,7 @@ void mostFreq(int arr[],int size, int k){
 } 
 
 int main(){
-    int size ,k;
+    int size ,k; 
     cout<<"Enter the size of the array: ";
     cin>>size;
     int* arr = new int[size];
