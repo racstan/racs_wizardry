@@ -47,7 +47,7 @@ int main(){
     int size ,k; 
     cout<<"Enter the size of the array: ";
     cin>>size; 
-    int* arr = new int[size];
+    int* arr = new int[size]; 
     cout<<"Enter the elements of the array";
     for(int i =0; i<size;i++){
         cin>>arr[i];
