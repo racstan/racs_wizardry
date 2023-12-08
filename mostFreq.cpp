@@ -31,7 +31,7 @@ void mostFreq(int arr[],int size, int k){
     for(int i=0; i<size; i++){
         if(arr[i]==tempElement){
             count[i]=-1;
-        }
+        } 
     }
     max = 0;
     tempElement =0;
