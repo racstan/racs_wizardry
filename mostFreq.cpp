@@ -33,7 +33,7 @@ void mostFreq(int arr[],int size, int k){
             count[i]=-1;
         } 
     } 
-    max = 0;
+    max = 0; 
     tempElement =0;
     tempCount--;
     }
