@@ -36,7 +36,7 @@ void mostFreq(int arr[],int size, int k){
     max = 0;  
     tempElement =0;
     tempCount--;
-    } 
+    }  
     }  
     else{   
         cout<<"The value of k cannot be greater than the size of the array";
