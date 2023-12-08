@@ -49,7 +49,7 @@ int main(){
     cin>>size; 
     int* arr = new int[size]; 
     cout<<"Enter the elements of the array";
-    for(int i =0; i<size;i++){
+    for(int i =0; i<size;i++){ 
         cin>>arr[i];
     }
     cout<<"Enter the number to return the most frequent element in the array";
