@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Random Thing</title>
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+    executeCode();
+
+    document.getElementById("jb").addEventListener("click",function(){
+        document.getElementById("jss").innerHTML="";
+        executeCode();
+    });
+    
+});
+
+function executeCode(){
+    let userInput = prompt("Enter numbers seperated by commas");
+    let arrOfNums = userInput.split(",");
+    arrOfNums = arrOfNums.map(Number);
+    let result = myFunc(arrOfNums);
+    document.getElementById("jss").innerHTML = result;
+    document.getElementById("jb").style.display = "block";
+}
+function myFunc(arrOfNums){
+    let boolArrOfNums = Array(arrOfNums.length).fill(false);
+for(let i=0;i<arrOfNums.length;++i){
+    if(arrOfNums[i]==7){
+        boolArrOfNums[i]= true;
+    }
+    else if(arrOfNums[i]!=7){
+        boolArrOfNums[i] = false;
+    }
+}
+
+for(let i=0; i<arrOfNums.length;++i){
+    if(boolArrOfNums[i]==true){
+        let text= "Boom!";
+        return text;
+    }
+}
+let text="there is no 7 in the array";
+return text;
+}
+    </script>
+    <h1>It's working</h1>
+    <p id="jss"></p>
+    <button id="jb">Click me to go again</button>
+</body>
+</html>
