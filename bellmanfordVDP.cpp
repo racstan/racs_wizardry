@@ -10,7 +10,7 @@ struct Edge {
 };
        
 class Graph { 
-    private:
+    private: 
         int V; 
         int E; 
         vector<Edge> edges; 
