@@ -9,7 +9,7 @@ struct Edge {
     int src, dest, weight;
 };
        
-class Graph { 
+class Graph {  
     private: 
         int V; 
         int E; 
