@@ -5,3 +5,4 @@ function add(){
     document.getElementById("result").innerHTML = result;
 }
 function sub(){
+    let result = parseInt(first.value) - parseInt(second.value);
