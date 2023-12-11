@@ -4,3 +4,4 @@ function add(){
     let result =parseInt(first.value) + parseInt(second.value);
     document.getElementById("result").innerHTML = result;
 }
+function sub(){
