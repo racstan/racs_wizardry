@@ -3,3 +3,4 @@ let second = document.getElementById("secondNum");
 function add(){
     let result =parseInt(first.value) + parseInt(second.value);
     document.getElementById("result").innerHTML = result;
+}
