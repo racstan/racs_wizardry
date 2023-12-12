@@ -20,4 +20,4 @@ int main() {
     const int* ptrToConstFromNonConst = const_cast<const int*>(ptrToNonConstValue);
 
     return 0;
-} 
+}  
