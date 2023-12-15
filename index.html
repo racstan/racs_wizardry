@@ -1,24 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calculator</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="inputs">
-            <p class="general">Enter Input:</p>
-            <input type="text" id="firstNum">
-            <input type="text" id="secondNum">
-        </div>
-        <div id="calc_buttons">
-            <button class="btn" id="add" onclick="add()">+</button>
-            <button class="btn" id="sub" onclick="sub()">-</button>
-            <button class="btn" id="mul" onclick="mul()">*</button>
-            <button class="btn" id="div" onclick="div()">/</button>
-        </div>
-        <p id="result"></p>
-        <script src="script.js"></script>
-    </body>
-    </html>
+<head>
+    <title>Testing a json file</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let companyMicrosoft = {
+    "Organization": "Microsoft",
+    "Founders": [
+        {
+            "name": "Bill Gates",
+            "role":"CEO"
+        },
+        {
+            "name":"Paul Allen",
+            "role":"CTO"
+        }
+    ],
+    "Headquarters": "Seattle, Washington",
+    "Products":[
+        {
+            "name":"Windows",
+            "category":"Operating System"
+        },
+        {
+            "name":"LinkedIn",
+            "category":"Social Networking"
+        },
+        {
+            "name":"Github",
+            "category":"Open Source"
+        }
+    ],
+    "age":"47"
+}
+
+console.log(companyMicrosoft)
+    </script>
+</body>
