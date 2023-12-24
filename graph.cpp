@@ -13,3 +13,4 @@ class Graph{
         adjList[src].push_back(des);
         if(isUndirected()){
             adjList[des].push_back(src);
+        }
