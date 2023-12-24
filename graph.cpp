@@ -18,3 +18,4 @@ class Graph{
     bool isUndirected(){
         return true;
     }
+    void printGraph(){
