@@ -9,3 +9,4 @@ class Graph{
         this->numVertices = numVertices;
         adjList = new list<int>[numVertices];
     }
+    void addEdge(int src, int des){
