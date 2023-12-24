@@ -5,3 +5,4 @@ class Graph{
     int numVertices;
     list<int> *adjList;
     public:
+    Graph(int numVertices){
