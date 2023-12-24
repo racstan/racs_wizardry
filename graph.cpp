@@ -7,3 +7,4 @@ class Graph{
     public:
     Graph(int numVertices){
         this->numVertices = numVertices;
+        adjList = new list<int>[numVertices];
