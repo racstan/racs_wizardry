@@ -10,3 +10,4 @@ class Graph{
         adjList = new list<int>[numVertices];
     }
     void addEdge(int src, int des){
+        adjList[src].push_back(des);
