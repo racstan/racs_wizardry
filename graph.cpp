@@ -19,3 +19,21 @@ class Graph{
         return true;
     }
     void printGraph(){
+        for(int i=0;i<numVertices; ++i){
+            cout<<"Adjacency List of vertex "<<i;
+            for(auto neighbor: adjList[i]){
+                cout<<neighbor;
+            }
+            cout<<endl;
+        }
+    }
+};
+
+int main(){
+    Graph myGraph(5);
+    myGraph.addEdge(1,4);
+    myGraph.addEdge(1,2);
+    myGraph.printGraph();
+}
+
+
