@@ -11,3 +11,4 @@ class Graph{
     }
     void addEdge(int src, int des){
         adjList[src].push_back(des);
+        if(isUndirected()){
