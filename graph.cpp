@@ -17,3 +17,4 @@ class Graph{
     }
     bool isUndirected(){
         return true;
+    }
