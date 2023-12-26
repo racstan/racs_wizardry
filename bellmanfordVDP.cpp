@@ -14,7 +14,7 @@ class Graph {
         int V; 
         int E; 
         vector<Edge> edges; 
-        unordered_map<int, vector<int>> adj;
+        unordered_map<int, vector<int>> adj; 
 
     public:
         Graph(int V, int E) {
