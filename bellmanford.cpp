@@ -11,7 +11,7 @@ struct Edge
     int weight;
 };
 
-void FinalSolution(vector<int>& dist)
+void FinalSolution(vector<int>& dist) 
 {
     cout << "\nVertex\tDistance from Source Vertex\n";
     for (int i = 0; i < dist.size(); ++i)
