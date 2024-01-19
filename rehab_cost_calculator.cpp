@@ -20,15 +20,33 @@ int solution(vector<int>& A, int X, int Y) {
 }
 
 int main() {
-    vector<int> A1 = {4, 3, 2, 7};
+    vector<int> A1;
+    A1.push_back(4);
+    A1.push_back(3);
+    A1.push_back(2);
+    A1.push_back(7);
     int X1 = 2, Y1 = 2;
     cout << "Minimum cost: " << solution(A1, X1, Y1) << endl;
 
-    vector<int> A2 = {10, 3, 4, 7};
+    vector<int> A2;
+    A2.push_back(10);
+    A2.push_back(3);
+    A2.push_back(4);
+    A2.push_back(7);
     int X2 = 2, Y2 = 3;
     cout << "Minimum cost: " << solution(A2, X2, Y2) << endl;
 
-    vector<int> A3 = {4, 2, 5, 4, 3, 5, 1, 4, 2, 7};
+    vector<int> A3;
+    A3.push_back(4);
+    A3.push_back(2);
+    A3.push_back(5);
+    A3.push_back(4);
+    A3.push_back(3);
+    A3.push_back(5);
+    A3.push_back(1);
+    A3.push_back(4);
+    A3.push_back(2);
+    A3.push_back(7);
     int X3 = 3, Y3 = 2;
     cout << "Minimum cost: " << solution(A3, X3, Y3) << endl;
 
