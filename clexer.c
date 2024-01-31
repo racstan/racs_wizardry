@@ -23,3 +23,13 @@ bool isKeyword(char* str){
     }
     return false;
 }
+
+bool isInteger(char* str){
+    int i, len = strlen(str);
+    if(len==0){
+        return false;
+    }
+    for(int i=0;i<len;i++){
+        
+    }
+}
