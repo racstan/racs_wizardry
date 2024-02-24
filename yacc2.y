@@ -38,6 +38,6 @@ LEX CODE:
 [a-zA-Z] { return LETTER ;}
 [0-9] { return DIGIT ; }
 [\n] { return NL ;} 
-[_] { return UND; }
+[_] { return UND; } 
 . { return yytext[0]; }
 %%
