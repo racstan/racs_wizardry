@@ -70,4 +70,20 @@ public:
         }
         return nullptr;
     }
+    bool deleteNode(int data){
+        Node* current = head;
+        while(current!= nullptr){
+            if(current->data = data){
+                if(current==head){
+                    if(current=tail){
+                        head=tail=nullptr;
+                    }
+                    else{
+                        head=head->next;
+                        head->prev = nullptr;
+                    }
+                }
+            }
+        }
+    }
 };
