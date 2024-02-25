@@ -60,4 +60,14 @@ public:
             current = current->prev;
         }
     }
+    Node* search(int data){
+        Node* current = head;
+        while(current!= nullptr){
+            if(current->data==data){
+                return current;
+            }
+            current = cuurent->next;
+        }
+        return nullptr;
+    }
 };
