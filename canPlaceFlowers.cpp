@@ -33,10 +33,10 @@ class Solution{
 };
 int main(){
     vector <int> flowerbed = {1,0,0,0,0,1};
+    vector <int> flowerbed1 = {1,1,0,1,0,1};
     int n = 2;
     Solution solution;
     bool result = solution.canPlaceFlowers(flowerbed,n);
     cout<<result<<endl;
     return 0;
-
 }
