@@ -31,7 +31,7 @@ class Solution{
         }
     }
 };
-int main(){    
+int main(){      
     vector <int> flowerbed = {1,0,0,0,0,1};
     vector <int> flowerbed1 = {1,1,0,1,0,1};
     int n = 2;    
