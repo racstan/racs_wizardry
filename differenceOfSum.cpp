@@ -29,7 +29,7 @@ public:
         cout << endl;
         cout << "Sum: " << sum;
     }
-};
+}; 
 int main() {
     Solution solution;
     int num1, num2;
