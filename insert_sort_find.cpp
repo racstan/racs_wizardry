@@ -10,7 +10,7 @@ void insertion_sort(int numbers[], int n) {
             numbers[j+1] = numbers[j];
             j = j-1;
         }
-        numbers[j+1] = key;
+        numbers[j+1] = key;  
     }
 }
 
