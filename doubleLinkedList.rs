@@ -57,4 +57,4 @@ fn main() {
     list.display_forward();
     println!("Reverse Order:");
     list.display_reverse();
-}
+}  
