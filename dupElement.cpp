@@ -5,7 +5,7 @@ int main(){
     int n;
     int temp;
     cout<<"Enter number of elements"<<endl;
-    cin>>n;
+    cin>>n; 
     int* arr = new int[n];
     bool* flag = new bool[n];
     for(int i=0;i<n;i++){
