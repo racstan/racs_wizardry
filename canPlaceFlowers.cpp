@@ -38,5 +38,5 @@ int main(){
     Solution solution;
     bool result = solution.canPlaceFlowers(flowerbed,n);
     cout<<result<<endl;
-    return 0;
+    return 0; 
 }
