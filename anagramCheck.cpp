@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include <string>
-using namespace std;
+using namespace std;  
 int main(){
     int countFreq = 0;
     bool setResult =true;
